@@ -1,0 +1,52 @@
+.cta {
+  position: relative;
+  isolation: isolate;
+  padding: 84px 0;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+}
+
+.ctaImg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.ctaShade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 38%,
+    rgba(0, 0, 0, 0.62) 55%,
+    rgba(0, 0, 0, 0.28) 72%,
+    rgba(0, 0, 0, 0.08) 100%
+  );
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaContent h2 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 3.2vw, 42px);
+  text-transform: uppercase;
+  max-width: 18ch;
+}
+
+.ctaContent p {
+  margin: 0;
+  max-width: 42ch;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}

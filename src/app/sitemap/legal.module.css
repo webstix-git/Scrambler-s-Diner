@@ -1,0 +1,26 @@
+.sitemapList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.sitemapList a {
+  display: block;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid rgba(22, 50, 91, 0.1);
+  border-radius: 12px;
+  color: var(--navy) !important;
+  font-family: var(--font-ui);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sitemapList a:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}

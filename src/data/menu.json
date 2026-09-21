@@ -1,0 +1,329 @@
+[
+  {
+    "id": "classics",
+    "title": "Breakfast Classics",
+    "eyebrow": "Served all day",
+    "items": [
+      {
+        "name": "Double Scrambler",
+        "price": "$8.99",
+        "description": "Two eggs, hashbrowns or homestyle potatoes, & toast."
+      },
+      {
+        "name": "Country Fried Steak & Eggs",
+        "price": "$13.99",
+        "description": "Chicken fried steak, two eggs any style, hashbrowns, & biscuit with sausage gravy."
+      }
+    ],
+    "note": "Choice of: Potatoes, Grits, or Oatmeal, Homemade White or Raisin Toast, or Biscuit & Gravy. Substitute Cottage Cheese for $1.49"
+  },
+  {
+    "id": "omelets",
+    "title": "Four Egg Omelets",
+    "eyebrow": "Our signature",
+    "items": [
+      {
+        "name": "Bacon & Cheese",
+        "price": "$12.99",
+        "description": "Smoked bacon & melted cheese."
+      },
+      {
+        "name": "Ham & Cheese",
+        "price": "$12.99",
+        "description": "Sausage with Monterey Jack cheese."
+      },
+      {
+        "name": "Three Cheese",
+        "price": "$12.99",
+        "description": "Cheddar, Jack, & American cheeses."
+      },
+      {
+        "name": "Spanish Omelet",
+        "price": "$12.99",
+        "description": "Jalapenos, Cheese, & Picante Sauce."
+      },
+      {
+        "name": "Veggie Omelet",
+        "price": "$12.99",
+        "description": "Onions, mushrooms, tomatoes, bell peppers, & cheese."
+      },
+      {
+        "name": "Avocado & Cream Cheese Omelet",
+        "price": "$12.99",
+        "description": "Ham, onions, bell peppers, tomatoes, & cheese."
+      },
+      {
+        "name": "Meat Lovers Omelet",
+        "price": "$17.99",
+        "description": "Ham, Bacon, Sausage, & Canadian Bacon with Cheese."
+      },
+      {
+        "name": "Fajita Omelet",
+        "price": "$17.99",
+        "description": "Chicken or Beef w/Onions, Peppers, Tomatoes, Jalapenos, & Cheese topped with Salsa & Sour Cream."
+      }
+    ]
+  },
+  {
+    "id": "benedicts",
+    "title": "Benedicts & Scramwiches",
+    "eyebrow": "Poached &amp; griddled",
+    "items": [
+      {
+        "name": "Eggs Benedict",
+        "price": "$14.99",
+        "description": "An English Muffin topped with Canadian Bacon, Two Poached Eggs, with Creamy Hollandaise Sauce, & sprinkled with Paprika."
+      },
+      {
+        "name": "Benedict Arnold",
+        "price": "$15.99",
+        "description": "An English Muffin topped with grilled Tomatoes, Bell Peppers, Onions, Mushrooms, Two Poached Eggs, with Creamy Hollandaise Sauce."
+      },
+      {
+        "name": "Hillybilly Benedict",
+        "price": "$13.99",
+        "description": "Biscuits, Eggs, Hashbrowns, topped with sausage gravy, & 2 sausage patties."
+      },
+      {
+        "name": "Fried Egg Scramwich",
+        "price": "$8.99",
+        "description": "Two Fried Eggs topped with American Cheese, served on homemade white toast & choice of potato."
+      },
+      {
+        "name": "Muffin or Bagel Egg Scramwich",
+        "price": "$7.99",
+        "description": "Egg & Cheese on Muffin or Bagel.",
+        "extras": [
+          "Add Bacon, Sausage or Ham for $2 .............. $9.99"
+        ]
+      },
+      {
+        "name": "Breakfast Scramwich",
+        "price": "$14.99",
+        "description": "Two Pancakes, With Two Eggs, Two Strips of Bacon, & Sausage of choice. Served with 1/2 side of Hashbrowns."
+      },
+      {
+        "name": "French Scramwich",
+        "price": "$14.99",
+        "description": "Two Pieces of French Toast. With Two Eggs, Two Strips of Bacon, & Sausage of choice. Served with 1/2 side of Hashbrowns."
+      },
+      {
+        "name": "Waffle Scramwich",
+        "price": "$14.99",
+        "description": "1/2 Waffle With Two Eggs, Two Strips of Bacon, & Sausage of choice. Served with 1/2 side of Hashbrowns."
+      }
+    ]
+  },
+  {
+    "id": "griddle",
+    "title": "Pancakes, Waffles & French Toast",
+    "eyebrow": "From the griddle",
+    "items": [
+      {
+        "name": "The Short Stack",
+        "price": "$7.99",
+        "description": "Two large Pancakes served with Butter & Syrup.",
+        "extras": [
+          "Add Blueberries, Strawberries, or Chocolate Chips $1.50"
+        ]
+      },
+      {
+        "name": "\"Hey\" Baby Cakes",
+        "price": "$7.59",
+        "description": "Three Dollar Size Pancakes."
+      },
+      {
+        "name": "Banana Nut Pancakes",
+        "price": "$12.49",
+        "description": "Three large Pancakes with Pecans cooked in and covered with Sliced Bananas.",
+        "extras": [
+          "Add Caramel $1.00"
+        ]
+      },
+      {
+        "name": "Pigs In A Blanket",
+        "price": "$13.99",
+        "description": "Three fluffy Pancakes wrapped Link Sausages."
+      },
+      {
+        "name": "Ron’s Tall Stack",
+        "price": "$11.99",
+        "description": "Not Quite 6’8\" but close. Served with Butter & Syrup.",
+        "extras": [
+          "Add Blueberries, Strawberries, or Chocolate Chips $1.50"
+        ]
+      },
+      {
+        "name": "Grilled French Toast",
+        "price": "$9.99",
+        "description": "Three homemade bread slices dipped in Cinnamon & Vanilla batter & sprinkled with Powdered Sugar. Bread of Choice."
+      },
+      {
+        "name": "Belgian Waffle",
+        "price": "$9.99",
+        "description": "Golden Crisp Waffle Sprinkled with Powdered Sugar."
+      },
+      {
+        "name": "Pecan Waffle",
+        "price": "$10.99",
+        "description": "Pecans Baked in a fluffy Waffle."
+      },
+      {
+        "name": "Waffle & Chicken",
+        "price": "$14.99",
+        "description": "Belgian Waffle served with three Chicken Strips."
+      }
+    ]
+  },
+  {
+    "id": "skillets",
+    "title": "Skillets & More",
+    "eyebrow": "Cast iron",
+    "items": [
+      {
+        "name": "Robyn’s Nest Skillet",
+        "price": "$14.99",
+        "description": "Ham, Potatoes, Mushrooms, Onions, Sausage, Bell Peppers, Two Eggs, & Cheddar Cheese."
+      },
+      {
+        "name": "Philly Skillet",
+        "price": "$17.99",
+        "description": "Philly Meat, Potatoes, Onions, Mushrooms, Bell Peppers, Melted Swiss Cheese."
+      },
+      {
+        "name": "Julie’s Skillet",
+        "price": "$14.49",
+        "description": "Potatoes, Spinach, Mushrooms, Two Eggs, & Swiss Cheese."
+      },
+      {
+        "name": "Chicken Fried Steak Skillet",
+        "price": "$13.99",
+        "description": "Chicken Fried Steak, Seasoned Potatoes, Two Eggs, Sausage Gravy, & Cheese."
+      },
+      {
+        "name": "Hash Smash",
+        "price": "$12.49",
+        "description": "Hashbrowns, Grilled Onions, Bell Peppers, Two Eggs, & Two Sausage Patties."
+      },
+      {
+        "name": "Jenni’s Breakfast Taco",
+        "price": "$11.99",
+        "description": "3 Grilled Corn Tortillas piled with Sausage, Scrambled Eggs, Cheddar Cheese, Grilled Onions, Choice of potatoes, Topped with Salsa & Sour Cream."
+      },
+      {
+        "name": "Jackie’s Skillet",
+        "price": "$15.99",
+        "description": "Scrambled Eggs, Hashbrowns, Mushrooms, Peppers, Onions, Spinach, Jack Cheese, & side of Oatmeal or fruit."
+      },
+      {
+        "name": "Olivia’s Skillet",
+        "price": "$17.99",
+        "description": "Grilled Ham, Potatoes, Onions, Bell Peppers, Two Eggs, & Cheddar Cheese."
+      },
+      {
+        "name": "Everything but the Kitchen Sink Skillet",
+        "price": "$17.99",
+        "description": "Potatoes topped with Ham, Bacon, Sausage, Mushrooms, Tomatoes, Onions, Bell Peppers, Jalapenos, Black Olives, Two Eggs, & Cheese."
+      },
+      {
+        "name": "Meat Lover’s Skillet",
+        "price": "$17.99",
+        "description": "Ham, Bacon, Sausage, Potatoes, Two Eggs, & Cheese."
+      },
+      {
+        "name": "Ham & Cheese Skillet",
+        "price": "$12.99",
+        "description": "Diced Ham, Potatoes, Two Eggs, & Cheese."
+      },
+      {
+        "name": "Shawn’s Skillet",
+        "price": "$13.49",
+        "description": "Grilled Sausage, Potatoes, Onions, Bell Peppers, Two Eggs, & Cheddar Cheese."
+      },
+      {
+        "name": "Corn Beef Hash Skillet",
+        "price": "$15.99",
+        "description": "with Onions & Peppers."
+      },
+      {
+        "name": "Nina’s Veggie Skillet",
+        "price": "$13.49",
+        "description": "Potatoes, Grilled Onions, Bell Peppers, Mushrooms, Sliced Tomatoes, Two Eggs, & Cheddar Cheese."
+      },
+      {
+        "name": "Mike’s Mexican Skillet",
+        "price": "$15.49",
+        "description": "Seasoned Taco Meat, Potatoes, Black Olives, Jalapenos, Green Chilies, Salsa, & Sour Cream, Two Eggs, & Cheddar Cheese."
+      }
+    ]
+  },
+  {
+    "id": "lunch",
+    "title": "Sandwich Station & Salad Shop",
+    "eyebrow": "Lunch",
+    "items": [
+      {
+        "name": "1/3 LB. Hamburger",
+        "price": "$7.99"
+      },
+      {
+        "name": "1/3 LB. Cheese Burger",
+        "price": "$8.99"
+      },
+      {
+        "name": "1/3 LB. Patty Melt",
+        "price": "$9.99"
+      },
+      {
+        "name": "Grilled Ham & Cheese",
+        "price": "$7.99"
+      },
+      {
+        "name": "BLT",
+        "price": "$8.99"
+      },
+      {
+        "name": "Grilled Cheese",
+        "price": "$6.99"
+      },
+      {
+        "name": "Chicken Strips",
+        "price": "$9.99"
+      },
+      {
+        "name": "Dinner Salad",
+        "price": "$3.99",
+        "description": "Lettuce, Tomatoes, Bacon Bits, & Cheddar Cheese."
+      },
+      {
+        "name": "Sandwich & Salad",
+        "price": "$14.99",
+        "description": "BLT or Ham & Cheese & 1/2 Chef Salad."
+      },
+      {
+        "name": "Scrambler’s Salad",
+        "price": "$15.99",
+        "description": "Marinated Chicken Breast on Lettuce, Tomatoes, Black Olives, Spinach, Jack & Cheddar Cheese."
+      },
+      {
+        "name": "Lauren’s Chef Salad",
+        "price": "$15.99",
+        "description": "Sliced Ham, Turkey, Lettuce, Tomatoes, Bacon Bits, Jack & Cheddar Cheese."
+      }
+    ],
+    "note": "All include potato of choice. Add any topping $1.25."
+  },
+  {
+    "id": "drinks",
+    "title": "Something to Drink",
+    "eyebrow": "Beverage Station",
+    "items": [
+      {
+        "name": "Fresh Brewed Coffee",
+        "price": "$13.59",
+        "description": "Orange, Apple, Grape, Tomato, Cranberry."
+      }
+    ],
+    "footerNote": "Kids (2 & under) eat off the Children's Menu for $1.49"
+  }
+]
