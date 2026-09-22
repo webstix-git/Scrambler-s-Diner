@@ -388,6 +388,7 @@ img { max-width: 100%; height: auto; }
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .social-btn:hover { background: var(--yellow); border-color: var(--yellow); color: var(--navy); }
+.social-btn:hover svg { fill: currentColor; color: var(--navy); }
 .footer-rule {
   max-width: 1280px;
   margin: 40px auto 0;
@@ -411,13 +412,12 @@ img { max-width: 100%; height: auto; }
 .footer-bar .sep { margin: 0 8px; opacity: 0.55; }
 
 @media (max-width: 1100px) {
-  .menu-shell { flex-wrap: wrap; padding: 10px 24px; min-height: auto; }
-  .site-header nav { order: 3; width: 100%; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .menu-shell { padding: 10px 24px; min-height: auto; }
+  /* nav collapses via hamburger in responsive.css below 1024px */
   .header-logo { height: 60px; }
   .about-grid, .contact-grid, .gallery-grid { grid-template-columns: 1fr 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .page-hero, .page-body, .site-footer { padding-left: 20px; padding-right: 20px; }
   .about-grid, .contact-grid, .gallery-grid, .footer-grid { grid-template-columns: 1fr; }
   .gallery-item img { height: 220px; }
@@ -430,8 +430,8 @@ img { max-width: 100%; height: auto; }
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
     align-self: flex-start;
-    margin-top: calc(var(--header-logo-h) * 0.40);
-  transform: translateY(-50%);
+    margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  transform: none;
     margin-bottom: 0;
   }
   .site-header.is-scrolled nav,
@@ -484,8 +484,8 @@ img { max-width: 100%; height: auto; }
   align-self: flex-start;
 }
 .site-header:not(.is-scrolled) nav {
-  margin-top: calc(var(--header-logo-h) * 0.40);
-  transform: translateY(-50%);
+  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  transform: none;
 }
 .site-header nav a {
   color: #FFFFFF;
@@ -506,8 +506,8 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 0;
 }
 .site-header:not(.is-scrolled) .header-actions {
-  margin-top: calc(var(--header-logo-h) * 0.40);
-  transform: translateY(-50%);
+  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  transform: none;
 }
 .header-phone {
   display: inline-flex;
@@ -547,4 +547,428 @@ img { max-width: 100%; height: auto; }
   align-self: center !important;
   margin-top: 0 !important;
   transform: none;
+}
+
+
+.footer-meta-list { gap: 12px; }
+.footer-meta {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  color: #FBF6EC !important;
+  text-decoration: none !important;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+}
+.footer-meta svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #FFD21E;
+}
+.footer-meta span { min-width: 0; }
+.footer-meta:hover,
+.footer-meta:hover span {
+  color: #FFD21E !important;
+}
+.footer-meta:hover svg {
+  color: #FFD21E !important;
+  fill: currentColor !important;
+}
+.footer-hours.footer-meta { color: var(--cream); }
+.social-btn:hover {
+  background: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+  color: var(--navy) !important;
+}
+.social-btn:hover svg {
+  fill: currentColor !important;
+  color: var(--navy) !important;
+}
+
+
+.footer-hours {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #FBF6EC !important;
+  cursor: default !important;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+.footer-hours svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #FFD21E;
+}
+.footer-hours:hover,
+.footer-hours:hover span,
+.footer-hours:hover svg {
+  color: inherit !important;
+}
+.footer-hours span { color: #FBF6EC !important; }
+.footer-hours:hover span { color: #FBF6EC !important; }
+
+
+/* Breadcrumbs */
+.page-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(251,246,236,0.78);
+}
+.page-breadcrumb a {
+  color: #FFD21E;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.page-breadcrumb a:hover { color: #FFFFFF; }
+.page-breadcrumb-sep { opacity: 0.55; }
+.page-breadcrumb-current { color: rgba(251,246,236,0.92); }
+
+/* Lower inside-page banner headings */
+.page-hero,
+.gallery-hero {
+  align-items: flex-end !important;
+  padding-top: 140px !important;
+  padding-bottom: 52px !important;
+}
+.page-hero-inner,
+.gallery-hero-content {
+  align-items: flex-end !important;
+  width: 100%;
+  flex-direction: column !important;
+}
+
+/* CTA banners match homepage font stack */
+.page-cta-inner .eyebrow {
+  font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 18px !important;
+  letter-spacing: 0.22em !important;
+}
+.page-cta-inner h2 {
+  font-family: 'Archivo Black', sans-serif !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+  font-style: normal !important;
+}
+.page-cta-inner > p:not(.eyebrow) {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif !important;
+}
+
+/* Footer: Franklin body, Barlow labels; equal columns */
+footer.footer--franklin,
+footer.footer--franklin p,
+footer.footer--franklin a,
+footer.footer--franklin span,
+.site-footer.footer--franklin,
+.site-footer.footer--franklin p,
+.site-footer.footer--franklin a,
+.site-footer.footer--franklin span {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif !important;
+}
+footer.footer--franklin .footer-label,
+footer.footer--franklin p.footer-label,
+.site-footer.footer--franklin .footer-label,
+.site-footer.footer--franklin p.footer-label,
+footer.footer--franklin p[style*="Barlow Condensed"] {
+  font-family: 'Barlow Condensed', sans-serif !important;
+}
+.footer-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  column-gap: 40px;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 28px !important; }
+}
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+}
+
+/* Synced: breadcrumb in page section, left banner titles, footer column alignment */
+.page-breadcrumb-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 40px 0;
+  box-sizing: border-box;
+}
+.menu-shell.page-breadcrumb-wrap { padding-top: 28px; padding-bottom: 0; }
+.page-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(22,50,91,0.65);
+  text-align: left;
+  justify-content: flex-start;
+}
+.page-breadcrumb a { color: #D81E29; text-decoration: none; transition: color 0.2s ease; }
+.page-breadcrumb a:hover { color: #16325B; }
+.page-breadcrumb-sep { opacity: 0.55; color: rgba(22,50,91,0.45); }
+.page-breadcrumb-current { color: #16325B; }
+
+.page-hero-inner,
+.gallery-hero-content {
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  width: 100%;
+  flex-direction: column !important;
+  text-align: left !important;
+}
+.page-hero-inner .page-title,
+.page-hero-inner h1,
+.gallery-hero-content h1,
+.page-title {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Inside banner: keep heading low + left-aligned */
+.page-hero,
+.gallery-hero {
+  align-items: flex-end !important;
+  padding-top: 140px !important;
+  padding-bottom: 52px !important;
+}
+.page-hero-inner,
+.gallery-hero-content {
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  text-align: left !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.page-hero-inner .page-title,
+.page-hero-inner h1,
+.page-hero-inner .page-eyebrow,
+.page-hero-inner .page-lead,
+.gallery-hero-content h1,
+.gallery-hero-content .eyebrow,
+.gallery-hero-content .lead {
+  text-align: left !important;
+  align-self: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+@media (max-width: 700px) {
+  .page-breadcrumb-wrap { padding-left: 20px; padding-right: 20px; }
+}
+
+/* Footer alignment:
+   One left-aligned stack per column (heading + body share the same left edge),
+   then that stack is centered in the grid cell — matches HOURS / QUICK LINKS example.
+   Icons hang left of the shared text edge. */
+.footer-grid > *,
+footer.home-footer > div:first-child > div,
+footer.footer--franklin > div:first-child > div,
+footer.site-footer > .footer-grid > div {
+  text-align: left !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  justify-self: stretch !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+.footer-grid > * > *,
+footer.home-footer > div:first-child > div > *,
+footer.footer--franklin > div:first-child > div > *,
+footer.site-footer > .footer-grid > div > * {
+  align-self: flex-start !important;
+  width: auto !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+.footer-label,
+footer .footer-label {
+  text-align: left !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 0 12px !important;
+  padding-left: 0 !important;
+  box-sizing: border-box !important;
+}
+/* Icon columns: heading text lines up with body text (icons hang left) */
+.footer-grid > div:has(.footer-meta),
+.footer-grid > div:has(.footer-hours),
+footer.home-footer > div:first-child > div:has(.footer-meta),
+footer.home-footer > div:first-child > div:has(.footer-hours),
+footer.footer--franklin > div:first-child > div:has(.footer-meta),
+footer.footer--franklin > div:first-child > div:has(.footer-hours),
+footer > div:first-child > div:has(.footer-meta),
+footer > div:first-child > div:has(.footer-hours) {
+  padding-left: 28px !important; /* room for hanging icons */
+}
+.footer-grid > div:has(.footer-meta) > .footer-label,
+.footer-grid > div:has(.footer-hours) > .footer-label,
+footer.home-footer > div:first-child > div:has(.footer-meta) > .footer-label,
+footer.home-footer > div:first-child > div:has(.footer-hours) > .footer-label,
+footer.footer--franklin > div:first-child > div:has(.footer-meta) > .footer-label,
+footer.footer--franklin > div:first-child > div:has(.footer-hours) > .footer-label,
+footer > div:first-child > div:has(.footer-meta) > .footer-label,
+footer > div:first-child > div:has(.footer-hours) > .footer-label,
+footer > div:first-child > div:has(.footer-meta) > p.footer-label,
+footer > div:first-child > div:has(.footer-hours) > p.footer-label {
+  padding-left: 0 !important;
+}
+.footer-meta,
+.footer-hours,
+footer .footer-meta,
+footer .footer-hours {
+  position: relative !important;
+}
+.footer-meta svg,
+.footer-hours svg,
+footer .footer-meta svg,
+footer .footer-hours svg {
+  position: absolute !important;
+  left: -28px !important; /* 18px icon + 10px gap */
+  top: 2px !important;
+  margin: 0 !important;
+  flex: none !important;
+}
+.footer-links {
+  display: grid !important;
+  gap: 8px !important;
+  justify-items: start !important;
+  text-align: left !important;
+  width: max-content !important;
+  max-width: 100% !important;
+}
+.footer-meta-list {
+  display: grid !important;
+  gap: 12px !important;
+  justify-items: start !important;
+  text-align: left !important;
+  width: max-content !important;
+  max-width: 100% !important;
+}
+.footer-meta,
+.footer-hours,
+footer .footer-meta,
+footer .footer-hours {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  text-align: left !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  box-sizing: border-box !important;
+}
+.footer-meta svg,
+.footer-hours svg,
+footer .footer-meta svg,
+footer .footer-hours svg {
+  position: absolute !important;
+  left: -28px !important;
+  top: 0.2em !important;
+  flex: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 !important;
+}
+.footer-meta span,
+.footer-hours span,
+footer .footer-meta span,
+footer .footer-hours span {
+  text-align: left !important;
+  min-width: 0 !important;
+}
+.footer-grid img,
+.footer-logo,
+footer.home-footer img,
+footer.footer--franklin > div:first-child img {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: block !important;
+}
+.footer-grid .social-row,
+footer .social-row,
+footer.home-footer .footer-col > div[style*="display: flex"],
+footer.footer--franklin > div:first-child > div > div[style*="gap: 12px"] {
+  justify-content: flex-start !important;
+  width: max-content !important;
+  max-width: 100% !important;
+}
+
+/* header hang fix */
+.site-header,
+.site-header nav,
+.site-header .header-actions,
+.site-header .header-logo {
+  backface-visibility: hidden;
+}
+.site-header.is-scrolled nav,
+.site-header.is-scrolled .header-actions {
+  transform: none !important;
+  margin-top: 0 !important;
+}
+
+
+/* Transparent header: white nav + phone */
+.site-header:not(.is-scrolled) nav a {
+  color: #FFFFFF !important;
+}
+.site-header:not(.is-scrolled) nav a:hover,
+.site-header:not(.is-scrolled) nav a.is-active {
+  color: #FFFFFF !important;
+  border-bottom-color: #D81E29;
+}
+.site-header:not(.is-scrolled) .header-phone,
+.site-header:not(.is-scrolled) .header-phone span,
+.site-header:not(.is-scrolled) .header-phone svg {
+  color: #FFFFFF !important;
+  fill: currentColor;
+}
+.site-header:not(.is-scrolled) .header-phone:hover,
+.site-header:not(.is-scrolled) .header-phone:hover span,
+.site-header:not(.is-scrolled) .header-phone:hover svg {
+  color: #FFD21E !important;
+}
+
+/* Footer final: keep heading/text left edge locked; icons hang left */
+footer .footer-meta,
+footer .footer-hours,
+.footer-meta,
+.footer-hours {
+  position: relative !important;
+  display: block !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+footer .footer-meta svg,
+footer .footer-hours svg,
+.footer-meta svg,
+.footer-hours svg {
+  position: absolute !important;
+  left: -28px !important;
+  top: 0.2em !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 !important;
+}
+footer .footer-meta span,
+footer .footer-hours span,
+.footer-meta span,
+.footer-hours span {
+  display: block !important;
+  text-align: left !important;
 }

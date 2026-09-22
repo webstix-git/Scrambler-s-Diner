@@ -25,6 +25,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `/menu` | Menu |
 | `/about` | About |
 | `/gallery` | Gallery |
+| `/testimonials` | Testimonials |
 | `/contact` | Contact |
 | `/sitemap` | Sitemap |
 | `/privacy-policy` | Privacy Policy |

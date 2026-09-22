@@ -1,0 +1,260 @@
+/* =============================================================================
+   1024–1180px: keep header actions, menu, about link, footer inside containers
+   ============================================================================= */
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+  /* ---- Header: phone + CTA stay inside menu-shell ---- */
+  .site-header .menu-shell,
+  .menu-shell {
+    gap: 10px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+    max-width: 1280px !important;
+    width: 100% !important;
+  }
+  .site-header nav,
+  .site-header .menu-shell > nav {
+    gap: 25px !important;
+    font-size: 20px !important;
+    letter-spacing: 0.06em !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    justify-content: center !important;
+  }
+  .site-header nav a {
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+  .header-logo,
+  .site-header .header-logo,
+  img.header-logo {
+    height: 110px !important;
+    max-height: 110px !important;
+    width: auto !important;
+    max-width: 150px !important;
+    flex: 0 0 auto !important;
+  }
+  .site-header.is-scrolled .header-logo,
+  .site-header.is-scrolled img.header-logo {
+    height: 56px !important;
+    max-height: 56px !important;
+  }
+  .site-header .header-actions {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+    max-width: 100%;
+    align-items: center !important;
+  }
+  .site-header .header-phone {
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    gap: 6px !important;
+  }
+  .site-header .header-phone svg {
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0;
+  }
+  .site-header .header-menu-btn {
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    letter-spacing: 0.08em !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* ---- Footer: 4 equal left-aligned columns (no max-content drift) ---- */
+  .footer-grid,
+  footer.home-footer > div:first-child,
+  footer.footer--franklin > div:first-child,
+  footer.site-footer > .footer-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px 28px !important;
+    column-gap: 28px !important;
+    align-items: start !important;
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .footer-grid > *,
+  footer.home-footer > div:first-child > div,
+  footer.footer--franklin > div:first-child > div,
+  footer.site-footer > .footer-grid > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .footer-links,
+  .footer-meta-list,
+  .footer-grid .social-row,
+  footer .social-row {
+    width: auto !important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+    justify-items: start !important;
+  }
+  .site-footer,
+  footer.site-footer,
+  footer.home-footer,
+  footer.footer--franklin {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .site-footer .footer-rule,
+  .site-footer .footer-bar,
+  footer .footer-bar {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ---- Menu page: sticky one-line categories; contain section grids ---- */
+.menu-cats,
+#menu-cats {
+  position: sticky !important;
+  z-index: 150 !important;
+  width: 100% !important;
+  overflow: visible !important;
+}
+.menu-cats .menu-shell {
+  max-width: 1280px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+.menu-cats-nav,
+.menu-cats nav {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.menu-cats a {
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+  .menu-cats .menu-shell {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .menu-cats a {
+    padding: 7px 12px !important;
+    font-size: 14px !important;
+  }
+
+  /* Keep 2-col through lunch, but force columns to fit the container */
+  #classics > div[style*="grid"],
+  #benedicts > div[style*="grid"],
+  #skillets > div[style*="grid"],
+  #drinks > div[style*="grid"] {
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) !important;
+  }
+  #omelets > div[style*="grid"],
+  #griddle > div[style*="grid"],
+  #lunch > div[style*="grid"] {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr) !important;
+  }
+  #classics > div[style*="grid"],
+  #omelets > div[style*="grid"],
+  #benedicts > div[style*="grid"],
+  #griddle > div[style*="grid"],
+  #skillets > div[style*="grid"],
+  #lunch > div[style*="grid"],
+  #drinks > div[style*="grid"],
+  .menu-section-grid,
+  .menu-section-grid.is-flip {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 20px 24px !important;
+    box-sizing: border-box !important;
+  }
+  #classics,
+  #omelets,
+  #benedicts,
+  #griddle,
+  #skillets,
+  #lunch {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+    overflow-x: clip;
+    max-width: 100%;
+  }
+  #classics > div,
+  #omelets > div,
+  #benedicts > div,
+  #griddle > div,
+  #skillets > div,
+  #lunch > div {
+    min-width: 0 !important;
+  }
+  #classics img,
+  #omelets img,
+  #benedicts img,
+  #griddle img,
+  #skillets img,
+  #lunch img,
+  .menu-figure img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
+
+/* ---- About: Honor Flight link stays inside column; underline matches text ---- */
+.about-story-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
+}
+.about-text-link {
+  display: block !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  align-self: flex-start !important;
+  margin-top: 16px;
+  padding: 0 !important;
+  border-bottom: none !important;
+  white-space: normal !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  text-decoration-skip-ink: none !important;
+  line-height: 1.45;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
