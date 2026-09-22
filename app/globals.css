@@ -1,3 +1,8 @@
+/* home body libre */
+body {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif;
+}
+
 html, body { margin: 0; }
 a { text-decoration: none; }
 * { box-sizing: border-box; }
@@ -84,8 +89,8 @@ a { text-decoration: none; }
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
     align-self: flex-start !important;
-    margin-top: calc(var(--header-logo-h) * 0.40) !important;
-    transform: translateY(-50%) !important;
+    margin-top: calc(var(--header-logo-h) * 0.40 - 14px) !important;
+    transform: none !important;
     margin-bottom: 0 !important;
   }
   .site-header.is-scrolled .menu-shell {
@@ -192,8 +197,7 @@ a { text-decoration: none; }
   @media (max-width: 860px) {
     .header-logo { height: 100px !important; }
     .site-header.is-scrolled .header-logo { height: 52px !important; }
-    .site-header .menu-shell { flex-wrap: wrap !important; }
-    .site-header nav { order: 3; width: 100%; justify-content: flex-start; overflow-x: auto; }
+    /* Nav collapses via hamburger in responsive.css below 1024px */
   }
 
   .sd-carousel { position: relative; padding: 0 52px; margin-top: 40px; }
@@ -259,7 +263,7 @@ a { text-decoration: none; }
   }
   .sd-review-card {
     background: #FDF8F1;
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 22px 20px;
     display: flex;
     flex-direction: column;
@@ -287,10 +291,10 @@ a { text-decoration: none; }
     font-size: 18px;
     flex: 0 0 auto;
   }
-  .sd-review-card__name { margin: 0; font-family: 'Archivo Black', sans-serif; font-size: 16px; color: #16325B; }
+  .sd-review-card__name { margin: 0; font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif; font-size: 16px; color: #16325B; }
   .sd-review-card__meta { margin: 2px 0 0; font-size: 13px; color: rgba(22,50,91,0.55); font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.04em; }
   .sd-review-card__stars { color: #F4B400; letter-spacing: 2px; font-size: 14px; }
-  .sd-review-card__text { margin: 0; font-family: 'Archivo Black', sans-serif; font-size: 14px; line-height: 1.55; color: rgba(22,50,91,0.82); flex: 1; }
+  .sd-review-card__text { margin: 0; font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif; font-size: 14px; line-height: 1.55; color: rgba(22,50,91,0.82); flex: 1; }
   .sd-google {
     margin-left: auto;
     width: 22px;
@@ -304,28 +308,42 @@ footer a:hover { color: #FFD21E !important; }
   .footer-bar a:hover { color: #FFFFFF !important; }
   footer .footer-col { min-width: 0; }
 
-  /* Shared button hover */
+  /* Shared button hover — color only, no lift/scale */
   a.is-btn,
   .header-menu-btn,
   .sd-carousel__arrow,
   a[style*="border-radius:999px"],
   a[style*="border-radius: 999px"] {
-    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease !important;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
   }
   a.is-btn:hover,
   .header-menu-btn:hover,
   a[style*="border-radius:999px"]:hover,
   a[style*="border-radius: 999px"]:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(22,50,91,0.16);
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
   }
-  /* Navy outline buttons */
+  a.is-btn-outline-dark:hover,
   a.is-btn-outline-dark:hover {
     background: #16325B !important;
     color: #FFFFFF !important;
     border-color: #16325B !important;
   }
-  /* Light outline on dark sections */
+  a.is-btn-filled-navy:hover {
+    background: #D81E29 !important;
+    color: #FFFFFF !important;
+    border-color: #D81E29 !important;
+  }
+  a.is-btn-filled-yellow:hover,
+  a.is-btn-cta-yellow:hover {
+    background: #D81E29 !important;
+    color: #FFFFFF !important;
+    border-color: #D81E29 !important;
+  }
   a.is-btn-cta-menu:hover {
     background: #FFD21E !important;
     color: #16325B !important;
@@ -336,7 +354,6 @@ footer a:hover { color: #FFD21E !important; }
     color: #16325B !important;
     border-color: #FFFFFF !important;
   }
-  /* Filled yellow header CTA */
   .header-menu-btn:hover {
     background: #D81E29 !important;
     color: #FFFFFF !important;
@@ -349,7 +366,392 @@ footer a:hover { color: #FFD21E !important; }
     background: #16325B !important;
     color: #FFFFFF !important;
   }
+  /* Griddle: hide left arrow only */
+  #griddle-carousel .sd-carousel__arrow.prev {
+    display: none !important;
+  }
+  /* Footer body copy uses Libre Franklin; labels stay Barlow */
+  footer.home-footer,
+  footer.home-footer p,
+  footer.home-footer a,
+  footer.home-footer span,
+  footer.footer--franklin,
+  footer.footer--franklin p,
+  footer.footer--franklin a,
+  footer.footer--franklin span {
+    font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif !important;
+  }
+  footer.home-footer .footer-label,
+  footer.home-footer p[style*="Barlow Condensed"],
+  footer.footer--franklin .footer-label,
+  footer.footer--franklin p[style*="Barlow Condensed"] {
+    font-family: 'Barlow Condensed', sans-serif !important;
+  }
+  footer.home-footer .social-btn {
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease !important;
+  }
+  footer.home-footer .social-btn:hover {
+    background: #FFD21E !important;
+    border-color: #FFD21E !important;
+    color: #16325B !important;
+  }
+  footer.home-footer .social-btn:hover svg {
+    fill: currentColor !important;
+    color: #16325B !important;
+  }
 
 
-/* hover fallbacks for buttons that used style-hover */
-a.is-btn:hover, a[class*="btn-"]:hover { filter: brightness(1.03); }
+.footer-meta-list { gap: 12px; }
+.footer-meta {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  color: #FBF6EC !important;
+  text-decoration: none !important;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  transition: color 0.2s ease !important;
+}
+.footer-meta svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #FFD21E;
+  transition: color 0.2s ease !important;
+}
+.footer-meta span { min-width: 0; transition: color 0.2s ease !important; }
+.footer-meta:hover,
+.footer-meta:hover span,
+footer a.footer-meta:hover,
+footer a.footer-meta:hover span,
+.home-footer a.footer-meta:hover,
+.home-footer a.footer-meta:hover span {
+  color: #FFD21E !important;
+}
+.footer-meta:hover svg,
+footer a.footer-meta:hover svg,
+.home-footer a.footer-meta:hover svg {
+  color: #FFD21E !important;
+  fill: currentColor !important;
+}
+
+.social-btn:hover {
+  background: #FFD21E !important;
+  border-color: #FFD21E !important;
+  color: #16325B !important;
+}
+.social-btn:hover svg {
+  fill: currentColor !important;
+  color: #16325B !important;
+}
+
+
+.footer-hours {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #FBF6EC !important;
+  cursor: default !important;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+.footer-hours svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #FFD21E;
+}
+.footer-hours:hover,
+.footer-hours:hover span,
+.footer-hours:hover svg {
+  color: inherit !important;
+}
+.footer-hours span { color: #FBF6EC !important; }
+.footer-hours:hover span { color: #FBF6EC !important; }
+
+
+/* Breadcrumbs (in page section, below banner) */
+.page-breadcrumb-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 40px 0;
+  box-sizing: border-box;
+}
+.menu-shell.page-breadcrumb-wrap {
+  padding-top: 28px;
+  padding-bottom: 0;
+}
+.page-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(22,50,91,0.65);
+  text-align: left;
+  justify-content: flex-start;
+}
+.page-breadcrumb a {
+  color: #D81E29;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.page-breadcrumb a:hover { color: #16325B; }
+.page-breadcrumb-sep { opacity: 0.55; color: rgba(22,50,91,0.45); }
+.page-breadcrumb-current { color: #16325B; }
+
+/* Lower inside-page banner headings */
+.page-hero,
+.gallery-hero {
+  align-items: flex-end !important;
+  padding-top: 140px !important;
+  padding-bottom: 52px !important;
+}
+.page-hero-inner,
+.gallery-hero-content {
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  width: 100%;
+  flex-direction: column !important;
+  text-align: left !important;
+}
+.page-hero-inner .page-title,
+.page-hero-inner h1,
+.gallery-hero-content h1,
+.page-title {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* CTA banners match homepage font stack */
+.page-cta-inner .eyebrow {
+  font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 18px !important;
+  letter-spacing: 0.22em !important;
+}
+.page-cta-inner h2 {
+  font-family: 'Archivo Black', sans-serif !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+  font-style: normal !important;
+}
+.page-cta-inner > p:not(.eyebrow) {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif !important;
+}
+
+/* Footer: Franklin body, Barlow labels; equal columns */
+footer.footer--franklin,
+footer.footer--franklin p,
+footer.footer--franklin a,
+footer.footer--franklin span,
+.site-footer.footer--franklin,
+.site-footer.footer--franklin p,
+.site-footer.footer--franklin a,
+.site-footer.footer--franklin span {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif !important;
+}
+footer.footer--franklin .footer-label,
+footer.footer--franklin p.footer-label,
+.site-footer.footer--franklin .footer-label,
+.site-footer.footer--franklin p.footer-label,
+footer.footer--franklin p[style*="Barlow Condensed"] {
+  font-family: 'Barlow Condensed', sans-serif !important;
+}
+.footer-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  column-gap: 40px;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 28px !important; }
+}
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+}
+
+/* Footer alignment:
+   Left-aligned stack per equal grid column (heading + body share left edge).
+   Icons hang left of the shared text edge. */
+.footer-grid > *,
+footer.home-footer > div:first-child > div,
+footer.footer--franklin > div:first-child > div,
+footer.site-footer > .footer-grid > div {
+  text-align: left !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  justify-self: stretch !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+.footer-grid > * > *,
+footer.home-footer > div:first-child > div > *,
+footer.footer--franklin > div:first-child > div > *,
+footer.site-footer > .footer-grid > div > * {
+  align-self: flex-start !important;
+  width: auto !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+.footer-label,
+footer .footer-label {
+  text-align: left !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 0 12px !important;
+  padding-left: 0 !important;
+  box-sizing: border-box !important;
+}
+/* Icon columns: heading text lines up with body text (icons hang left) */
+.footer-grid > div:has(.footer-meta),
+.footer-grid > div:has(.footer-hours),
+footer.home-footer > div:first-child > div:has(.footer-meta),
+footer.home-footer > div:first-child > div:has(.footer-hours),
+footer.footer--franklin > div:first-child > div:has(.footer-meta),
+footer.footer--franklin > div:first-child > div:has(.footer-hours),
+footer > div:first-child > div:has(.footer-meta),
+footer > div:first-child > div:has(.footer-hours) {
+  padding-left: 28px !important; /* room for hanging icons */
+}
+.footer-grid > div:has(.footer-meta) > .footer-label,
+.footer-grid > div:has(.footer-hours) > .footer-label,
+footer.home-footer > div:first-child > div:has(.footer-meta) > .footer-label,
+footer.home-footer > div:first-child > div:has(.footer-hours) > .footer-label,
+footer.footer--franklin > div:first-child > div:has(.footer-meta) > .footer-label,
+footer.footer--franklin > div:first-child > div:has(.footer-hours) > .footer-label,
+footer > div:first-child > div:has(.footer-meta) > .footer-label,
+footer > div:first-child > div:has(.footer-hours) > .footer-label,
+footer > div:first-child > div:has(.footer-meta) > p.footer-label,
+footer > div:first-child > div:has(.footer-hours) > p.footer-label {
+  padding-left: 0 !important;
+}
+.footer-meta,
+.footer-hours,
+footer .footer-meta,
+footer .footer-hours {
+  position: relative !important;
+}
+.footer-meta svg,
+.footer-hours svg,
+footer .footer-meta svg,
+footer .footer-hours svg {
+  position: absolute !important;
+  left: -28px !important; /* 18px icon + 10px gap */
+  top: 2px !important;
+  margin: 0 !important;
+  flex: none !important;
+}
+.footer-links {
+  display: grid !important;
+  gap: 8px !important;
+  justify-items: start !important;
+  text-align: left !important;
+  width: max-content !important;
+  max-width: 100% !important;
+}
+.footer-meta-list {
+  display: grid !important;
+  gap: 12px !important;
+  justify-items: start !important;
+  text-align: left !important;
+  width: max-content !important;
+  max-width: 100% !important;
+}
+.footer-meta,
+.footer-hours,
+footer .footer-meta,
+footer .footer-hours {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  text-align: left !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  box-sizing: border-box !important;
+}
+.footer-meta svg,
+.footer-hours svg,
+footer .footer-meta svg,
+footer .footer-hours svg {
+  position: absolute !important;
+  left: -28px !important;
+  top: 0.2em !important;
+  flex: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 !important;
+}
+.footer-meta span,
+.footer-hours span,
+footer .footer-meta span,
+footer .footer-hours span {
+  text-align: left !important;
+  min-width: 0 !important;
+}
+.footer-grid img,
+.footer-logo,
+footer.home-footer img,
+footer.footer--franklin > div:first-child img {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: block !important;
+}
+.footer-grid .social-row,
+footer .social-row,
+footer.home-footer .footer-col > div[style*="display: flex"],
+footer.footer--franklin > div:first-child > div > div[style*="gap: 12px"] {
+  justify-content: flex-start !important;
+  width: max-content !important;
+  max-width: 100% !important;
+}
+
+/* header hang fix */
+.site-header,
+.site-header nav,
+.site-header .header-actions,
+.site-header .header-logo {
+  backface-visibility: hidden;
+}
+.site-header.is-scrolled nav,
+.site-header.is-scrolled .header-actions {
+  transform: none !important;
+  margin-top: 0 !important;
+}
+
+/* Footer final: keep heading/text left edge locked; icons hang left */
+footer .footer-meta,
+footer .footer-hours,
+.footer-meta,
+.footer-hours {
+  position: relative !important;
+  display: block !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+footer .footer-meta svg,
+footer .footer-hours svg,
+.footer-meta svg,
+.footer-hours svg {
+  position: absolute !important;
+  left: -28px !important;
+  top: 0.2em !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 !important;
+}
+footer .footer-meta span,
+footer .footer-hours span,
+.footer-meta span,
+.footer-hours span {
+  display: block !important;
+  text-align: left !important;
+}

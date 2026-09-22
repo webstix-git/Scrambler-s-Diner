@@ -1,0 +1,260 @@
+{
+  "family": [
+    {
+      "src": "/images/gallery/family-scrambler-family-photo-2.webp",
+      "alt": "Scrambler Family Photo 2",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-scrambler-photo.webp",
+      "alt": "Scrambler Photo",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-family-photo-6-grandkids.webp",
+      "alt": "Family Photo 6 Grandkids",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-scrambler-grand-kids-2026.webp",
+      "alt": "Scrambler Grand Kids 2026",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-scrambler-veteran-4-honor-flight.webp",
+      "alt": "Scrambler Veteran 4 Honor Flight",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-scrambler-family-photo-3.webp",
+      "alt": "Scrambler Family Photo 3",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-scrambler-family-photo-4.webp",
+      "alt": "Scrambler Family Photo 4",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/family-scrambler-family-photo-5.webp",
+      "alt": "Scrambler Family Photo 5",
+      "w": 1050,
+      "h": 1400,
+      "cutout": false
+    }
+  ],
+  "food": [
+    {
+      "src": "/images/gallery/food-pancakes-w-syrup.webp",
+      "alt": "Pancakes W Syrup",
+      "w": 1400,
+      "h": 1084,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-omelet.webp",
+      "alt": "Omelet",
+      "w": 1400,
+      "h": 792,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-french-toast-scramwich.webp",
+      "alt": "French Toast Scramwich",
+      "w": 1400,
+      "h": 933,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-french-toast.webp",
+      "alt": "French Toast",
+      "w": 1400,
+      "h": 679,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-eggs-benedict-hashbrowns.webp",
+      "alt": "Eggs Benedict Hashbrowns",
+      "w": 1400,
+      "h": 870,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-custom-omlete.webp",
+      "alt": "Custom Omlete",
+      "w": 1400,
+      "h": 790,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-chef-salad.webp",
+      "alt": "Chef Salad",
+      "w": 1400,
+      "h": 758,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-burger.webp",
+      "alt": "Burger",
+      "w": 1400,
+      "h": 1050,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-breakfast-hashbrown-casserole.webp",
+      "alt": "Breakfast Hashbrown Casserole",
+      "w": 1400,
+      "h": 880,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-bacon-eggs-potatoes.webp",
+      "alt": "Bacon Eggs Potatoes",
+      "w": 1400,
+      "h": 855,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/food-bacon-eggs-hashbrowns.webp",
+      "alt": "Bacon Eggs Hashbrowns",
+      "w": 1400,
+      "h": 979,
+      "cutout": true
+    },
+    {
+      "src": "/images/gallery/cinnamon-roll.jpg",
+      "alt": "Cinnamon Roll",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/strawberry-waffle.jpg",
+      "alt": "Strawberry Waffle",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/skillet-waffle-syrup.jpg",
+      "alt": "Skillet Waffle Syrup",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/chef-salad.jpg",
+      "alt": "Chef Salad",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/burrito-waffle-fries.jpg",
+      "alt": "Burrito Waffle Fries",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/cast-iron-skillet.jpg",
+      "alt": "Cast Iron Skillet",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/blueberry-pancakes.jpg",
+      "alt": "Blueberry Pancakes",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/eggs-bacon-pancakes.jpg",
+      "alt": "Eggs Bacon Pancakes",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/ham-eggs-breakfast.jpg",
+      "alt": "Ham Eggs Breakfast",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/pancake-eggs-ham.jpg",
+      "alt": "Pancake Eggs Ham",
+      "w": 206,
+      "h": 206,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/buffet.jpg",
+      "alt": "Breakfast Buffet",
+      "w": 1000,
+      "h": 666,
+      "cutout": false
+    }
+  ],
+  "diner": [
+    {
+      "src": "/images/gallery/diner-scramblers-3.webp",
+      "alt": "Scramblers 3",
+      "w": 750,
+      "h": 1000,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/diner-scramblers-4.webp",
+      "alt": "Scramblers 4",
+      "w": 747,
+      "h": 1000,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/diner-scramblers-outside-2.webp",
+      "alt": "Scramblers Outside 2",
+      "w": 750,
+      "h": 1000,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/diner-scramblers-outside.webp",
+      "alt": "Scramblers Outside",
+      "w": 787,
+      "h": 1400,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/diner-bill-scramblers.webp",
+      "alt": "Bill Scramblers",
+      "w": 1400,
+      "h": 1050,
+      "cutout": false
+    },
+    {
+      "src": "/images/gallery/dining-room.webp",
+      "alt": "Dining Room",
+      "w": 1024,
+      "h": 768,
+      "cutout": false
+    }
+  ]
+}
