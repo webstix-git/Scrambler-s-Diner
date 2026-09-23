@@ -59,7 +59,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   letter-spacing: 0.08em;
   text-transform: uppercase;
   align-self: flex-start;
-  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  margin-top: 0;
   transform: none;
 }
 .site-header nav a {
@@ -78,7 +78,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   gap: 12px;
   flex-wrap: nowrap;
   align-self: flex-start;
-  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  margin-top: 0;
   transform: none;
   margin-bottom: 0;
 }
@@ -327,6 +327,9 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   background: var(--navy);
   color: var(--cream);
   padding: 60px 40px 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .footer-grid {
   max-width: 1280px;
@@ -492,7 +495,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 
 .mosaic {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   align-items: stretch;
 }

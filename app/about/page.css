@@ -181,7 +181,8 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   font-size: 18px;
   line-height: 1.6;
   color: rgba(251,246,236,0.88);
-  font-family: 'Archivo Black', sans-serif;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -198,6 +199,9 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 }
 .page-body h2:first-child { margin-top: 0; }
 .page-body p, .page-body li {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.7;
   color: var(--ink);
@@ -275,6 +279,9 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 .about-band-navy .about-copy h2 { color: #fff; }
 .about-lede {
   margin: 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: clamp(17px, 1.35vw, 19px);
   line-height: 1.7;
   color: rgba(22,50,91,0.88);
@@ -445,6 +452,9 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   background: var(--navy);
   color: var(--cream);
   padding: 60px 40px 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .footer-grid {
   max-width: 1280px;
@@ -524,7 +534,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
     align-self: flex-start;
-    margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+    margin-top: 0;
   transform: none;
     margin-bottom: 0;
   }
@@ -579,7 +589,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   align-self: flex-start;
 }
 .site-header:not(.is-scrolled) nav {
-  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  margin-top: 0;
   transform: none;
 }
 .site-header nav a {
@@ -601,7 +611,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   margin-bottom: 0;
 }
 .site-header:not(.is-scrolled) .header-actions {
-  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  margin-top: 0;
   transform: none;
 }
 .header-phone {
@@ -721,7 +731,11 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   margin: 0 0 14px;
   font-size: clamp(28px, 3.2vw, 42px);
   text-transform: uppercase;
-  max-width: 18ch;
+  max-width: none;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .page-cta-inner h2 { white-space: normal; }
 }
 .page-cta-inner p {
   margin: 0;
@@ -1364,4 +1378,152 @@ footer .footer-hours span,
 .about-story-block-media-left .about-story-copy {
   grid-area: copy;
   max-width: 42rem;
+}
+
+.about-qa-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.about-qa {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.about-qa-num {
+  margin: 0 0 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #D81E29;
+}
+.about-qa-grid-3 .about-card:nth-child(1) .about-qa-num { color: #16325B; }
+.about-qa-grid-3 .about-card:nth-child(2) .about-qa-num { color: #D81E29; }
+.about-qa-grid-3 .about-card:nth-child(3) .about-qa-num { color: #16325B; }
+.about-qa .about-values {
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.about-mosaic-gallery {
+  margin-top: 8px;
+}
+.about-mosaic-family {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.about-mosaic-veterans {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+button.about-mosaic-item {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  cursor: zoom-in;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+.about-mosaic-item img {
+  transition: transform 0.45s ease;
+}
+.about-mosaic-item:hover img,
+.about-mosaic-item:focus-visible img {
+  transform: scale(1.04);
+}
+.about-mosaic-item:focus-visible {
+  outline: 3px solid #FFD21E;
+  outline-offset: 2px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 72px;
+}
+.lightbox.is-open { display: flex; }
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(22,50,91,0.92);
+  cursor: pointer;
+}
+.lightbox-stage {
+  position: relative;
+  z-index: 2;
+  max-width: min(1100px, 92vw);
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.lightbox-stage img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(86vh - 48px);
+  object-fit: contain;
+  border-radius: 8px;
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  z-index: 3;
+  border: 0;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: var(--yellow);
+  color: var(--navy);
+}
+.lightbox-close {
+  top: 18px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  font-size: 32px;
+  line-height: 1;
+}
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  font-size: 42px;
+  line-height: 1;
+}
+.lightbox-prev { left: 18px; }
+.lightbox-next { right: 18px; }
+
+@media (max-width: 900px) {
+  .about-qa-grid-3 { grid-template-columns: 1fr; }
+  .about-mosaic-family,
+  .about-mosaic-veterans {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lightbox { padding: 64px 16px 24px; }
+  .lightbox-prev, .lightbox-next { width: 44px; height: 44px; font-size: 34px; }
+}
+@media (max-width: 560px) {
+  .about-mosaic-family,
+  .about-mosaic-veterans { grid-template-columns: 1fr; }
+  .about-mosaic-item.wide { grid-column: auto; }
 }

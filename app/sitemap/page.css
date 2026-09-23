@@ -172,7 +172,8 @@ img { max-width: 100%; height: auto; }
   font-size: 18px;
   line-height: 1.6;
   color: rgba(251,246,236,0.88);
-  font-family: 'Archivo Black', sans-serif;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -189,6 +190,9 @@ img { max-width: 100%; height: auto; }
 }
 .page-body h2:first-child { margin-top: 0; }
 .page-body p, .page-body li {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.7;
   color: var(--ink);
@@ -355,6 +359,9 @@ img { max-width: 100%; height: auto; }
   background: var(--navy);
   color: var(--cream);
   padding: 60px 40px 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .footer-grid {
   max-width: 1280px;
@@ -432,7 +439,7 @@ img { max-width: 100%; height: auto; }
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
     align-self: flex-start;
-    margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+    margin-top: 0;
   transform: none;
     margin-bottom: 0;
   }
@@ -486,7 +493,7 @@ img { max-width: 100%; height: auto; }
   align-self: flex-start;
 }
 .site-header:not(.is-scrolled) nav {
-  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  margin-top: 0;
   transform: none;
 }
 .site-header nav a {
@@ -508,7 +515,7 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 0;
 }
 .site-header:not(.is-scrolled) .header-actions {
-  margin-top: calc(var(--header-logo-h) * 0.40 - 14px);
+  margin-top: 0;
   transform: none;
 }
 .header-phone {

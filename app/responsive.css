@@ -213,8 +213,8 @@ body.nav-lock {
   }
 
   /* Hide desktop inline nav; phone/CTA live in the drawer */
-  .site-header .menu-shell > nav,
-  .site-header nav {
+  header.site-header .menu-shell > nav,
+  header.site-header nav {
     display: none !important;
   }
   .site-header .header-actions {
@@ -693,19 +693,12 @@ body.nav-lock {
     background: #16325B !important;
   }
 
-  /* Testimonials: clear space between arrow buttons and cards */
+  /* Testimonials / griddle: no arrows, flush with container */
   #testimonials-carousel.sd-carousel,
-  #testimonials .sd-carousel {
-    padding-left: 56px !important;
-    padding-right: 56px !important;
-  }
-  #testimonials-carousel .sd-carousel__arrow.prev,
-  #testimonials .sd-carousel__arrow.prev {
-    left: 2px !important;
-  }
-  #testimonials-carousel .sd-carousel__arrow.next,
-  #testimonials .sd-carousel__arrow.next {
-    right: 2px !important;
+  #testimonials .sd-carousel,
+  #griddle-carousel.sd-carousel {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   #testimonials-carousel .sd-carousel__viewport,
   #testimonials .sd-carousel__viewport {
@@ -837,5 +830,31 @@ body.nav-lock {
     margin-right: 0 !important;
     max-width: 160px !important;
     height: auto !important;
+  }
+}
+
+/* Inline two-column sections (menu and similar) stack on small screens */
+@media (max-width: 800px) {
+  [style*="grid-template-columns: 60% 40%"],
+  [style*="grid-template-columns: 40% 60%"],
+  [style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+  [style*="padding: 52px 40px"],
+  [style*="padding: 80px 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .page-cta-btns,
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .page-cta-btns a,
+  .contact-actions a,
+  .contact-form button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }

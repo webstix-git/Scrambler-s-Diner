@@ -75,13 +75,13 @@
   .site-header { --header-logo-h: 201px; }
   .site-header.is-scrolled { --header-logo-h: 72px; }
   .site-header:not(.is-scrolled) .menu-shell {
-    align-items: flex-start !important;
+    align-items: center !important;
   }
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
-    align-self: flex-start !important;
-    margin-top: calc(var(--header-logo-h) * 0.40) !important;
-    transform: translateY(-50%) !important;
+    align-self: center !important;
+    margin-top: 0 !important;
+    transform: none !important;
     margin-bottom: 0 !important;
   }
   .site-header.is-scrolled .menu-shell {
@@ -167,14 +167,16 @@
     gap: 20px !important;
   }
   .menu-cats {
+    position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 80px;
     z-index: 150;
-    background: rgba(251,246,236,0.98);
+    background: #16325B;
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    padding: 10px 0;
+    padding: 19px 0;
     margin-top: 0;
-    border-bottom: 1px solid rgba(22,50,91,0.1);
+    border-bottom: 1px solid rgba(22, 50, 91, 0.1);
     border-top: none;
   }
   .menu-cats nav {
@@ -182,6 +184,54 @@
   }
   .menu-cats a {
     font-size: 16px !important;
+    color: #ffffff !important;
+    border: 1.5px solid rgb(255 255 255 / 30%) !important;
+  }
+  .menu-cats a:hover {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  .page-breadcrumb-wrap {
+    position: relative;
+    z-index: 2;
+    background: #FBF6EC;
+    padding: 22px 40px 18px !important;
+  }
+  .page-breadcrumb,
+  .page-breadcrumb-current,
+  .page-breadcrumb-sep {
+    color: #16325B !important;
+  }
+  .page-breadcrumb a {
+    color: #D81E29 !important;
+  }
+  .page-breadcrumb a:hover {
+    color: #16325B !important;
+  }
+  #classics,
+  #omelets,
+  #benedicts,
+  #griddle,
+  #skillets,
+  #lunch,
+  #drinks {
+    scroll-margin-top: 180px;
+  }
+  #classics figure,
+  #omelets figure,
+  #benedicts figure,
+  #griddle figure,
+  #skillets figure,
+  #lunch figure,
+  #drinks figure {
+    top: 168px !important;
+  }
+  .menu-cta-title {
+    font-family: 'Archivo Black', sans-serif !important;
+    font-size: clamp(30px, 3.2vw, 42px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.02em !important;
+    margin: 0 0 10px !important;
   }
   .menu-cta-btn-fill:hover {
     background: #FFD21E !important;
@@ -195,7 +245,7 @@
   @media (max-width: 1100px) {
     .header-logo { height: 140px !important; }
     .site-header.is-scrolled .header-logo { height: 60px !important; }
-    .menu-cats { top: 76px; }
+    .menu-cats { top: 80px; }
     .menu-section-grid, .menu-section-grid.is-flip { grid-template-columns: 1fr; }
   }
   @media (max-width: 860px) {
@@ -203,7 +253,7 @@
     .site-header.is-scrolled .header-logo { height: 52px !important; }
     .site-header .menu-shell { flex-wrap: wrap !important; }
     .site-header nav { order: 3; width: 100%; justify-content: flex-start; overflow-x: auto; }
-    .menu-cats { top: 120px; }
+    .menu-cats { top: 80px; }
   }
 
   .menu-section-grid {
@@ -229,12 +279,12 @@
     .menu-section-grid, .menu-section-grid.is-flip {
       grid-template-columns: 1fr;
     }
-    .menu-cats { top: 84px; }
+    .menu-cats { top: 80px; }
   }
   @media (max-width: 640px) {
     .header-logo { height: 110px; }
     .site-header.is-scrolled .header-logo { height: 56px; }
-    .menu-cats { top: 68px; }
+    .menu-cats { top: 80px; }
   }
 
   @media (max-width: 900px) {
@@ -248,10 +298,18 @@
     }
   }
 
-  .page-copy, p { font-family: 'Archivo Black', sans-serif; }
+  .page-copy, p, figcaption, footer, .footer-bar {
+    font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
   .subhead, .site-header nav a, .header-menu-btn, .btn,
   .menu-item-name, .menu-price, .menu-cats a {
     font-family: 'Barlow Condensed', sans-serif;
+  }
+  /* Price list card item names (subtitles) */
+  [style*="letter-spacing: -0.005em"] {
+    font-size: 24px !important;
   }
   .header-phone:hover { color: #FFD21E !important; }
   .site-header.is-scrolled .header-phone:hover { color: #D81E29 !important; }
@@ -259,12 +317,42 @@
   .site-header.is-scrolled .header-menu-btn:hover { background: #FFD21E !important; color: #16325B !important; }
 
   @media (max-width: 900px) {
-    #drinks > div:first-child {
-      grid-template-columns: 1fr !important;
+    .page-breadcrumb-wrap {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
     }
+    #classics,
+    #omelets,
+    #benedicts,
+    #griddle,
+    #skillets,
+    #lunch,
+    #drinks {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+    #classics > div,
+    #omelets > div,
+    #benedicts > div,
+    #griddle > div,
+    #skillets > div,
+    #lunch > div,
+    #drinks > div,
+    #drinks > div:first-child,
     #drinks > div:nth-child(2) {
       grid-template-columns: 1fr !important;
     }
+    #classics figure,
+    #omelets figure,
+    #benedicts figure,
+    #griddle figure,
+    #skillets figure,
+    #lunch figure,
+    #drinks figure {
+      position: static !important;
+      top: auto !important;
+    }
+    .menu-cats { top: 72px; }
   }
 
   .social-btn {

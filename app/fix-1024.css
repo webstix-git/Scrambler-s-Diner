@@ -69,8 +69,8 @@
 
   /* ---- Footer: 4 equal left-aligned columns (no max-content drift) ---- */
   .footer-grid,
-  footer.home-footer > div:first-child,
-  footer.footer--franklin > div:first-child,
+  footer.home-footer:not(.footer--fw) > div:first-child,
+  footer.footer--franklin:not(.footer--fw) > div:first-child,
   footer.site-footer > .footer-grid {
     display: grid !important;
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
