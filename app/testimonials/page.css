@@ -744,8 +744,8 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 
 /* Testimonials page */
 .testimonials-page { background: var(--cream); }
-.testimonials-band { padding: 72px 40px 88px; background: #FFF7DC; }
-.testimonials-inner { max-width: 1280px; margin: 0 auto; }
+.testimonials-band { padding: 72px 0 88px; background: #FFF7DC; }
+.testimonials-inner { max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; }
 .testimonials-head { text-align: left; max-width: none; margin: 0 0 44px; }
 .testimonials-head h2 {
   margin: 0 0 14px;
@@ -837,7 +837,8 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   .testimonials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 768px) {
-  .testimonials-band { padding: 56px 20px 72px; }
+  .testimonials-band { padding: 56px 0 72px; }
+  .testimonials-inner { padding-left: 20px; padding-right: 20px; }
   .testimonials-grid { grid-template-columns: 1fr; }
 }
 
@@ -1263,4 +1264,43 @@ footer .footer-hours span,
 .footer-hours span {
   display: block !important;
   text-align: left !important;
+}
+
+/* Breadcrumb lines up with the hero title and the review column */
+.page-hero {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.page-hero-inner,
+.page-breadcrumb-wrap,
+.testimonials-inner {
+  box-sizing: border-box !important;
+  max-width: 1280px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.page-breadcrumb-wrap {
+  padding-top: 28px !important;
+  padding-bottom: 16px !important;
+  background: #FBF6EC;
+}
+.testimonials-band {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.page-breadcrumb {
+  margin: 0 !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+@media (max-width: 1023px) {
+  .page-hero-inner,
+  .page-breadcrumb-wrap,
+  .testimonials-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

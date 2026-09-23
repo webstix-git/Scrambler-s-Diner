@@ -8,9 +8,26 @@
   padding-right: 40px !important;
 }
 .home-hero__title {
+  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif !important;
+  font-weight: 700 !important;
   font-size: clamp(32px, 3.4vw, 58px) !important;
   line-height: 1.05 !important;
   letter-spacing: -0.02em !important;
+}
+.home-page .site-header .menu-shell,
+.home-page .site-header:not(.is-scrolled) .menu-shell {
+  align-items: center !important;
+}
+.home-page .site-header nav,
+.home-page .site-header .header-actions,
+.home-page .site-header:not(.is-scrolled) nav,
+.home-page .site-header:not(.is-scrolled) .header-actions {
+  align-self: center !important;
+  margin-top: -42px !important;
+}
+.home-page .site-header.is-scrolled nav,
+.home-page .site-header.is-scrolled .header-actions {
+  margin-top: 0 !important;
 }
 .home-hero__line {
   display: block;

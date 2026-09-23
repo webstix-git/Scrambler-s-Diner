@@ -191,6 +191,154 @@
     color: #ffffff !important;
     border-color: #ffffff !important;
   }
+  span[style*="color: #D81E29"] {
+    font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif !important;
+    font-weight: 700 !important;
+  }
+  .menu-sub {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 8px;
+    background: #FFD21E;
+    color: #16325B;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  .menu-star {
+    color: #FFD21E;
+    font-size: 0.85em;
+  }
+  .menu-sides {
+    margin-top: 28px;
+  }
+  .menu-sides h3,
+  .menu-sides-section h3 {
+    margin: 0 0 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px !important;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #16325B;
+  }
+  .menu-sides-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-auto-flow: column;
+    gap: 0 48px;
+    background: #FFFFFF;
+    border: 1px solid rgba(22,50,91,0.1);
+    border-radius: 22px;
+    padding: 8px 28px 12px;
+    box-shadow: 0 10px 26px rgba(22,50,91,0.06);
+  }
+  .menu-side-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(22,50,91,0.09);
+  }
+  .menu-side-row span:first-child {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .menu-side-row .menu-side-dots {
+    flex: 1;
+    border-bottom: 1px dotted rgba(22,50,91,0.28);
+    transform: translateY(-5px);
+  }
+  .menu-side-price {
+    font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 18px;
+    color: #D81E29;
+  }
+  .menu-price-hl {
+    display: inline;
+    margin-left: 6px;
+    padding: 0;
+    background: none;
+    color: #D81E29;
+    font-weight: 700;
+    border-radius: 0;
+  }
+  .menu-notices-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 22px;
+    align-items: stretch;
+  }
+  .menu-notice {
+    border-radius: 16px;
+    padding: 22px 24px;
+  }
+  .menu-notice p {
+    margin: 0 !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+    font-weight: 700 !important;
+    color: #16325B !important;
+  }
+  .menu-notice-senior {
+    background: #FFFFFF;
+    border: 3px solid #16325B;
+  }
+  .menu-notice-raw {
+    background: #16325B;
+    display: flex;
+    align-items: center;
+  }
+  .menu-notice-raw p {
+    color: #FBF6EC !important;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    .menu-sides-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+      grid-auto-flow: row;
+    }
+    .menu-notices-grid { grid-template-columns: 1fr; }
+  }
+  .menu-salad-label {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 32px !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: #16325B !important;
+  }
+  .menu-photo-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: sticky;
+    top: 168px;
+  }
+  .menu-photo-card {
+    background: #fff;
+    border: 1px solid rgba(22,50,91,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(22,50,91,0.06);
+  }
+  .menu-photo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    background: #fff;
+  }
+  .menu-photo-card h3 {
+    margin: 0;
+    padding: 12px 16px 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px !important;
+    letter-spacing: 0.02em;
+    color: #16325B;
+  }
   .page-breadcrumb-wrap {
     position: relative;
     z-index: 2;
@@ -348,7 +496,8 @@
     #griddle figure,
     #skillets figure,
     #lunch figure,
-    #drinks figure {
+    #drinks figure,
+    .menu-photo-cards {
       position: static !important;
       top: auto !important;
     }

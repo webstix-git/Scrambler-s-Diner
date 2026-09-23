@@ -939,8 +939,9 @@ footer.footer--franklin p[style*="Barlow Condensed"] {
 /* Synced: breadcrumb in page section, left banner titles, footer column alignment */
 .page-breadcrumb-wrap {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 28px 40px 0;
+  padding: 28px 40px 16px;
   box-sizing: border-box;
 }
 .menu-shell.page-breadcrumb-wrap { padding-top: 28px; padding-bottom: 0; }
@@ -1193,4 +1194,39 @@ footer .footer-hours span,
 .footer-hours span {
   display: block !important;
   text-align: left !important;
+}
+
+/* Breadcrumb lines up with the hero title and the form column */
+.page-hero {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.page-hero-inner,
+.page-breadcrumb-wrap,
+.page-body {
+  box-sizing: border-box !important;
+  max-width: 1280px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.page-breadcrumb-wrap {
+  padding-top: 28px !important;
+  padding-bottom: 16px !important;
+  background: #FBF6EC;
+}
+.page-breadcrumb {
+  margin: 0 !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+@media (max-width: 1023px) {
+  .page-hero-inner,
+  .page-breadcrumb-wrap,
+  .page-body {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

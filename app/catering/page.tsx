@@ -170,7 +170,7 @@ const HTML = `<header class="site-header" id="site-header">
       <div class="footer-fw__follow">
         <span>Follow us on:</span>
         <a href="https://www.facebook.com/scramblersdiner417" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2V12h2.2V9.8c0-2.2 1.3-3.4 3.3-3.4.96 0 1.96.17 1.96.17v2.16h-1.1c-1.09 0-1.43.68-1.43 1.37V12h2.43l-.39 2.9h-2.04v7A10 10 0 0022 12z"/></svg></a>
-        <a href="https://www.doordash.com/store/scramblers-springfield-403703/23639549/" aria-label="DoorDash"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></a>
+        <a href="https://www.doordash.com/store/scramblers-springfield-403703/23639549/" aria-label="DoorDash"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.071 8.409a6.09 6.09 0 0 0-5.396-3.228H.584A.589.589 0 0 0 .17 6.184L3.894 9.93a1.752 1.752 0 0 0 1.337.6h12.517a1.49 1.49 0 0 1 1.487 1.49 1.49 1.49 0 0 1-1.487 1.49H9.142a.589.589 0 0 0-.415 1.003l3.725 3.746a1.752 1.752 0 0 0 1.337.6h3.79a6.09 6.09 0 0 0 5.492-8.45z"/></svg></a>
       </div>
     </div>
     <div class="footer-fw__hours">
