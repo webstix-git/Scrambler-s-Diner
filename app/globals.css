@@ -88,7 +88,12 @@ a { text-decoration: none; }
     align-items: center !important;
   }
   .site-header:not(.is-scrolled) nav,
-  .site-header:not(.is-scrolled) .header-actions,
+  .site-header:not(.is-scrolled) .header-actions {
+    align-self: center !important;
+    margin-top: -42px !important;
+    transform: none !important;
+    margin-bottom: 0 !important;
+  }
   .site-header.is-scrolled nav,
   .site-header.is-scrolled .header-actions {
     align-self: center !important;
@@ -811,7 +816,7 @@ footer.home-footer.footer--fw > .footer-fw {
 }
 .footer-fw__identity img,
 footer.footer--fw .footer-fw__identity img {
-  height: 100px !important;
+  height: 200px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain;
@@ -976,7 +981,11 @@ footer.footer--fw .footer-bar a:hover {
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
     align-self: center !important;
-    margin-top: 0 !important;
+    margin-top: -42px !important;
     transform: none !important;
+  }
+  .site-header.is-scrolled nav,
+  .site-header.is-scrolled .header-actions {
+    margin-top: 0 !important;
   }
 }

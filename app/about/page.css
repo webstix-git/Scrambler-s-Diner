@@ -274,6 +274,8 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 .about-copy h2,
 .about-section-head h2 {
   margin: 0 0 18px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 500;
   font-size: clamp(28px, 3.2vw, 40px);
   letter-spacing: -0.02em;
   line-height: 1.08;
@@ -310,6 +312,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 .about-card h3 {
   margin: 0 0 8px;
   font-family: 'Archivo Black', sans-serif;
+  font-weight: 500;
   font-size: 19px;
   letter-spacing: -0.01em;
   color: var(--navy);
@@ -467,7 +470,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   gap: 28px;
   align-items: start;
 }
-.footer-logo { height: 196px; width: auto; display: block; object-fit: contain; }
+.footer-logo { height: 200px; width: auto; display: block; object-fit: contain; }
 .footer-tag { margin: 14px 0 0; font-size: 15px; color: rgba(251,246,236,0.9); }
 .footer-label {
   margin: 0 0 12px;
@@ -536,8 +539,8 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   .site-header .header-logo { /* synced via height rules */ }
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
-    align-self: flex-start;
-    margin-top: 0;
+    align-self: center;
+    margin-top: -42px;
   transform: none;
     margin-bottom: 0;
   }
@@ -568,7 +571,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   padding: 0 40px;
   min-height: 120px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: nowrap;
@@ -589,10 +592,10 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   font-size: 19px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  align-self: flex-start;
+  align-self: center;
 }
 .site-header:not(.is-scrolled) nav {
-  margin-top: 0;
+  margin-top: -42px;
   transform: none;
 }
 .site-header nav a {
@@ -610,11 +613,11 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   align-items: center;
   gap: 12px;
   flex-wrap: nowrap;
-  align-self: flex-start;
+  align-self: center;
   margin-bottom: 0;
 }
 .site-header:not(.is-scrolled) .header-actions {
-  margin-top: 0;
+  margin-top: -42px;
   transform: none;
 }
 .header-phone {
@@ -732,6 +735,8 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 }
 .page-cta-inner h2 {
   margin: 0 0 14px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 500;
   font-size: clamp(28px, 3.2vw, 42px);
   text-transform: uppercase;
   max-width: none;
@@ -895,6 +900,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
 }
 .page-cta-inner h2 {
   font-family: 'Archivo Black', sans-serif !important;
+  font-weight: 500 !important;
   font-size: clamp(28px, 3.2vw, 42px) !important;
   letter-spacing: -0.02em !important;
   text-transform: none !important;

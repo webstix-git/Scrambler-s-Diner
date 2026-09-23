@@ -8,11 +8,32 @@
   padding-right: 40px !important;
 }
 .home-hero__title {
-  font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif !important;
-  font-weight: 700 !important;
+  font-family: 'Archivo Black', sans-serif !important;
+  font-weight: 400 !important;
   font-size: clamp(32px, 3.4vw, 58px) !important;
   line-height: 1.05 !important;
   letter-spacing: -0.02em !important;
+}
+
+/* What we do — three card headings */
+#visit article h3 {
+  font-weight: 500 !important;
+}
+.home-page div:has(> #why-menu-cta) > h2 {
+  font-weight: 500 !important;
+}
+.home-page div:has(> #why-menu-cta) ~ div h3 {
+  font-weight: 500 !important;
+}
+.home-page #testimonials h2 {
+  font-weight: 500 !important;
+}
+.home-page .home-catering__copy h2,
+.home-page .cta-heading {
+  font-weight: 500 !important;
+}
+.home-page section:has(.home-catering__copy) ~ section h2 {
+  font-weight: 500 !important;
 }
 .home-page .site-header .menu-shell,
 .home-page .site-header:not(.is-scrolled) .menu-shell {
@@ -113,6 +134,12 @@
   padding-right: 0 !important;
   padding-bottom: 72px !important;
 }
+.home-page .home-griddle h2 {
+  font-weight: 500 !important;
+}
+.home-page .home-griddle .sd-dish-card h3 {
+  font-weight: 500 !important;
+}
 .home-page .home-griddle__cta {
   margin-top: 28px;
   margin-bottom: 36px;
@@ -145,7 +172,7 @@ footer.home-footer > div.footer-fw:first-child {
   margin-bottom: 6px;
 }
 .footer-fw__identity img {
-  height: 100px !important;
+  height: 200px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain;

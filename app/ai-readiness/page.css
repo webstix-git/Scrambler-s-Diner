@@ -369,7 +369,7 @@ img { max-width: 100%; height: auto; }
   gap: 28px;
   align-items: start;
 }
-.footer-logo { height: 196px; width: auto; display: block; object-fit: contain; }
+.footer-logo { height: 200px; width: auto; display: block; object-fit: contain; }
 .footer-tag { margin: 14px 0 0; font-size: 15px; color: rgba(251,246,236,0.9); }
 .footer-label {
   margin: 0 0 12px;
@@ -436,8 +436,8 @@ img { max-width: 100%; height: auto; }
   .site-header .header-logo { /* synced via height rules */ }
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
-    align-self: flex-start;
-    margin-top: 0;
+    align-self: center;
+    margin-top: -42px;
   transform: none;
     margin-bottom: 0;
   }
@@ -468,7 +468,7 @@ img { max-width: 100%; height: auto; }
   padding: 0 40px;
   min-height: 120px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: nowrap;
@@ -488,10 +488,10 @@ img { max-width: 100%; height: auto; }
   font-size: 19px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  align-self: flex-start;
+  align-self: center;
 }
 .site-header:not(.is-scrolled) nav {
-  margin-top: 0;
+  margin-top: -42px;
   transform: none;
 }
 .site-header nav a {
@@ -509,11 +509,11 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   gap: 12px;
   flex-wrap: nowrap;
-  align-self: flex-start;
+  align-self: center;
   margin-bottom: 0;
 }
 .site-header:not(.is-scrolled) .header-actions {
-  margin-top: 0;
+  margin-top: -42px;
   transform: none;
 }
 .header-phone {

@@ -80,7 +80,7 @@
   .site-header:not(.is-scrolled) nav,
   .site-header:not(.is-scrolled) .header-actions {
     align-self: center !important;
-    margin-top: 0 !important;
+    margin-top: -42px !important;
     transform: none !important;
     margin-bottom: 0 !important;
   }
@@ -117,7 +117,7 @@
   }
   .site-header .menu-shell {
     display: flex !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     justify-content: space-between !important;
     gap: 16px !important;
     flex-wrap: nowrap !important;
@@ -364,6 +364,15 @@
   #lunch,
   #drinks {
     scroll-margin-top: 180px;
+  }
+  #classics h2,
+  #omelets h2,
+  #benedicts h2,
+  #griddle h2,
+  #skillets h2,
+  #lunch h2,
+  #drinks h2 {
+    font-weight: 500 !important;
   }
   #classics figure,
   #omelets figure,
