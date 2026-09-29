@@ -21,7 +21,7 @@ const HTML = `<header class="site-header" id="site-header">
   </div>
 </header>
 <section class="page-hero">
-  <img class="hero-bg" src="/images/buffet.jpg" alt="Scrambler's catering buffet">
+  <img class="hero-bg" src="/inside-assets/505577011_4128343864052687_4699121151767079972_n.jpg" alt="Chef salad with ham, turkey, cheddar, tomatoes and ranch dressing at Scrambler's Diner">
   <div class="page-hero-shade"></div>
   <div class="page-hero-inner">
     <h1 class="page-title">Catering</h1>
@@ -78,7 +78,7 @@ const HTML = `<header class="site-header" id="site-header">
       <header class="about-section-head">
         <p class="about-kicker">Event entrees</p>
         <h2>Lunch and after-hours menus</h2>
-        <p class="cater-lede">You pick the menu and we prepare it — sandwiches, roasts, and sides for meetings, parties, and fundraisers.</p>
+        <p class="cater-lede">You pick the menu and we prepare it: sandwiches, roasts, and sides for meetings, parties, and fundraisers.</p>
       </header>
       <div class="cater-entrees-split">
         <div class="cater-menu-grid cater-menu-grid-2">
@@ -136,7 +136,7 @@ const HTML = `<header class="site-header" id="site-header">
           <li>A strong fit for school and team fundraisers</li>
           <li>Free delivery and setup when we come to you</li>
         </ul>
-        <p class="about-signoff">Call 417-886-4224 to start a quote</p>
+        <p class="about-signoff"><svg class="about-signoff__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Call"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.02l-2.2 2.19z"/></svg> <span class="about-signoff__phone">417-886-4224</span> to start a quote</p>
       </div>
     </div>
   </section>
@@ -173,11 +173,6 @@ const HTML = `<header class="site-header" id="site-header">
         <a href="https://www.doordash.com/store/scramblers-springfield-403703/23639549/" aria-label="DoorDash"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.071 8.409a6.09 6.09 0 0 0-5.396-3.228H.584A.589.589 0 0 0 .17 6.184L3.894 9.93a1.752 1.752 0 0 0 1.337.6h12.517a1.49 1.49 0 0 1 1.487 1.49 1.49 1.49 0 0 1-1.487 1.49H9.142a.589.589 0 0 0-.415 1.003l3.725 3.746a1.752 1.752 0 0 0 1.337.6h3.79a6.09 6.09 0 0 0 5.492-8.45z"/></svg></a>
       </div>
     </div>
-    <div class="footer-fw__hours">
-      <p class="footer-fw__heading">Hours</p>
-      <p>Mon–Sat 6:00 a.m. – 2:00 p.m.</p>
-      <p>Sun 7:00 a.m. – 2:00 p.m.</p>
-    </div>
     <div class="footer-fw__links">
       <p class="footer-fw__heading">Quick Links</p>
       <div class="footer-fw__link-grid">
@@ -189,6 +184,11 @@ const HTML = `<header class="site-header" id="site-header">
         <a href="/gallery">Gallery</a>
         <a href="/contact">Contact</a>
       </div>
+    </div>
+    <div class="footer-fw__hours">
+      <p class="footer-fw__heading">Hours</p>
+      <p>Mon–Sat 6:00 a.m. – 2:00 p.m.</p>
+      <p>Sun 7:00 a.m. – 2:00 p.m.</p>
     </div>
   
     <div class="footer-fw__visit">
@@ -243,5 +243,5 @@ export default function Page() {
     }
   }, []);
 
-  return <div ref={ref} dangerouslySetInnerHTML={{ __html: HTML }} />;
+  return <div ref={ref} className="catering-page" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }

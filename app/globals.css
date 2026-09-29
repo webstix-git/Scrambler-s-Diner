@@ -106,7 +106,7 @@ a { text-decoration: none; }
 
   body { margin: 0; background: #FBF6EC; }
   a { color: #D81E29; text-decoration: none; }
-  a:hover { color: #16325B; }
+  a:hover { color: #000000; }
   * { box-sizing: border-box; }
   p { font-size: 18px !important; }
   h1 { font-size: 60px !important; }
@@ -143,7 +143,7 @@ a { text-decoration: none; }
     align-self: center !important;
   }
   .site-header .menu-shell a {
-    color: #16325B;
+    color: #000000;
   }
   .site-header nav a,
   .site-header .menu-shell nav a {
@@ -160,7 +160,7 @@ a { text-decoration: none; }
     border-bottom-color: #D81E29 !important;
   }
   .site-header .header-phone {
-    color: #16325B !important;
+    color: #000000 !important;
     transition: color 0.2s ease;
   }
   .header-phone:hover {
@@ -168,8 +168,8 @@ a { text-decoration: none; }
   }
   .site-header.is-scrolled {
     background: #FBF6EC !important;
-    border-bottom-color: rgba(22,50,91,0.12) !important;
-    box-shadow: 0 6px 20px rgba(22,50,91,0.12) !important;
+    border-bottom-color: rgba(97,52,123,0.12) !important;
+    box-shadow: 0 6px 20px rgba(97,52,123,0.12) !important;
     padding: 0 !important;
   }
   .site-header.is-scrolled .menu-shell {
@@ -207,7 +207,7 @@ a { text-decoration: none; }
     flex-wrap: nowrap !important;
   }
   .site-header.is-scrolled .header-menu-btn {
-    background: #16325B !important;
+    background: #61347B !important;
     color: #FFFFFF !important;
   }
   @media (max-width: 1100px) {
@@ -243,15 +243,15 @@ a { text-decoration: none; }
     border-radius: 999px;
     border: none;
     background: #E8E4DC;
-    color: #16325B;
+    color: #000000;
     font-size: 22px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(22,50,91,0.12);
+    box-shadow: 0 2px 8px rgba(97,52,123,0.12);
   }
-  .sd-carousel__arrow:hover { background: #16325B; color: #FFF; }
+  .sd-carousel__arrow:hover { background: #61347B; color: #FFF; }
   .sd-carousel__arrow.prev { left: 0; }
   .sd-carousel__arrow.next { right: 0; }
   .sd-carousel__dots {
@@ -272,14 +272,14 @@ a { text-decoration: none; }
   .sd-carousel__dot.is-active { background: #D81E29; }
   .sd-dish-card {
     background: #FFFFFF;
-    border: 1px solid rgba(22,50,91,0.1);
+    border: 1px solid rgba(97,52,123,0.1);
     border-radius: 16px;
     padding: 18px 16px 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     min-width: 0;
-    box-shadow: 0 8px 22px rgba(22,50,91,0.06);
+    box-shadow: 0 8px 22px rgba(97,52,123,0.06);
   }
   .sd-review-card {
     background: #FDF8F1;
@@ -289,7 +289,7 @@ a { text-decoration: none; }
     flex-direction: column;
     gap: 12px;
     min-width: 0;
-    box-shadow: 0 6px 18px rgba(22,50,91,0.08);
+    box-shadow: 0 6px 18px rgba(97,52,123,0.08);
     height: 100%;
     box-sizing: border-box;
   }
@@ -302,7 +302,7 @@ a { text-decoration: none; }
     width: 44px;
     height: 44px;
     border-radius: 999px;
-    background: #16325B;
+    background: #61347B;
     color: #FFD21E;
     display: flex;
     align-items: center;
@@ -311,10 +311,10 @@ a { text-decoration: none; }
     font-size: 18px;
     flex: 0 0 auto;
   }
-  .sd-review-card__name { margin: 0; font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif; font-size: 16px; color: #16325B; }
-  .sd-review-card__meta { margin: 2px 0 0; font-size: 13px; color: rgba(22,50,91,0.55); font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.04em; }
+  .sd-review-card__name { margin: 0; font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif; font-size: 16px; color: #000000; }
+  .sd-review-card__meta { margin: 2px 0 0; font-size: 13px; color: #000000; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.04em; }
   .sd-review-card__stars { color: #F4B400; letter-spacing: 2px; font-size: 14px; }
-  .sd-review-card__text { margin: 0; font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif; font-size: 14px; line-height: 1.55; color: rgba(22,50,91,0.82); flex: 1; }
+  .sd-review-card__text { margin: 0; font-family: var(--font-libre-franklin), 'Libre Franklin', sans-serif; font-size: 14px; line-height: 1.55; color: #000000; flex: 1; }
   .sd-google {
     margin-left: auto;
     width: 22px;
@@ -349,9 +349,9 @@ footer a:hover { color: #FFD21E !important; }
   }
   a.is-btn-outline-dark:hover,
   a.is-btn-outline-dark:hover {
-    background: #16325B !important;
+    background: #61347B !important;
     color: #FFFFFF !important;
-    border-color: #16325B !important;
+    border-color: #61347B !important;
   }
   a.is-btn-filled-navy:hover {
     background: #D81E29 !important;
@@ -366,12 +366,12 @@ footer a:hover { color: #FFD21E !important; }
   }
   a.is-btn-cta-menu:hover {
     background: #FFD21E !important;
-    color: #16325B !important;
+    color: #000000 !important;
     border-color: #FFD21E !important;
   }
   .is-btn-outline-light:hover {
     background: #FFFFFF !important;
-    color: #16325B !important;
+    color: #000000 !important;
     border-color: #FFFFFF !important;
   }
   .header-menu-btn:hover {
@@ -383,7 +383,7 @@ footer a:hover { color: #FFD21E !important; }
     color: #FFFFFF !important;
   }
   .sd-carousel__arrow:hover {
-    background: #16325B !important;
+    background: #61347B !important;
     color: #FFFFFF !important;
   }
   /* Flush carousels: no arrows, cards align with section container */
@@ -420,11 +420,11 @@ footer a:hover { color: #FFD21E !important; }
   footer.home-footer .social-btn:hover {
     background: #FFD21E !important;
     border-color: #FFD21E !important;
-    color: #16325B !important;
+    color: #000000 !important;
   }
   footer.home-footer .social-btn:hover svg {
     fill: currentColor !important;
-    color: #16325B !important;
+    color: #000000 !important;
   }
 
 
@@ -465,11 +465,11 @@ footer a.footer-meta:hover svg,
 .social-btn:hover {
   background: #FFD21E !important;
   border-color: #FFD21E !important;
-  color: #16325B !important;
+  color: #000000 !important;
 }
 .social-btn:hover svg {
   fill: currentColor !important;
-  color: #16325B !important;
+  color: #000000 !important;
 }
 
 
@@ -516,7 +516,7 @@ footer a.footer-meta:hover svg,
   font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
-  color: rgba(22,50,91,0.65);
+  color: #000000;
   text-align: left;
   justify-content: flex-start;
 }
@@ -525,9 +525,9 @@ footer a.footer-meta:hover svg,
   text-decoration: none;
   transition: color 0.2s ease;
 }
-.page-breadcrumb a:hover { color: #16325B; }
-.page-breadcrumb-sep { opacity: 0.55; color: rgba(22,50,91,0.45); }
-.page-breadcrumb-current { color: #16325B; }
+.page-breadcrumb a:hover { color: #000000; }
+.page-breadcrumb-sep { opacity: 0.55; color: #000000; }
+.page-breadcrumb-current { color: #000000; }
 
 /* Lower inside-page banner headings */
 .page-hero,
@@ -557,7 +557,7 @@ footer a.footer-meta:hover svg,
 .page-cta-inner .eyebrow {
   font-family: 'Barlow Condensed', sans-serif !important;
   font-size: 18px !important;
-  letter-spacing: 0.22em !important;
+  letter-spacing: 0.11em !important;
 }
 .page-cta-inner h2 {
   font-family: 'Archivo Black', sans-serif !important;
@@ -788,10 +788,10 @@ footer .footer-hours span,
   text-align: left !important;
 }
 
-/* Site-wide 4-column footer (brand / hours / quick links / visit) */
+/* Site-wide 4-column footer (brand / quick links / hours / visit) */
 footer.footer--fw {
   padding: 64px 40px 0 !important;
-  background: #16325B;
+  background: #61347B;
   color: #FBF6EC;
 }
 footer.footer--fw > .footer-fw,
@@ -800,7 +800,7 @@ footer.home-footer.footer--fw > .footer-fw {
   max-width: 1280px;
   margin: 0 auto;
   display: grid !important;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr) minmax(0, 1fr) minmax(0, 1.05fr) !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   gap: 48px 56px !important;
   align-items: start !important;
   width: 100% !important;
@@ -893,10 +893,11 @@ footer.footer--fw .footer-fw__identity img {
 .footer-fw p.footer-fw__heading {
   margin: 0 0 18px !important;
   font-family: 'Barlow Condensed', sans-serif !important;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.06em !important;
   text-transform: uppercase;
-  font-size: 15px !important;
-  color: #FFD21E !important;
+  font-size: 18px !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
 }
 .footer-fw__hours p:not(.footer-fw__heading) {
   margin: 0 0 8px !important;
@@ -924,7 +925,7 @@ footer.footer--fw .footer-bar {
   margin: 48px -40px 0;
   padding: 0;
   border-top: 1px solid rgba(251, 246, 236, 0.22);
-  background: #16325B;
+  background: #61347B;
   color: rgba(251, 246, 236, 0.85);
 }
 footer.footer--fw .footer-bar > div {
@@ -947,16 +948,29 @@ footer.footer--fw .footer-bar a {
 footer.footer--fw .footer-bar a:hover {
   color: #FFFFFF !important;
 }
+@media (min-width: 769px) {
+  footer.site-footer.footer--fw,
+  footer.home-footer.footer--fw {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
 @media (max-width: 900px) {
-  footer.footer--fw > .footer-fw {
+  footer.footer--fw > .footer-fw,
+  footer.site-footer.footer--fw > .footer-fw,
+  footer.home-footer.footer--fw > .footer-fw {
     grid-template-columns: 1fr 1fr !important;
     gap: 36px 32px !important;
   }
   .footer-fw__brand { grid-column: auto; }
 }
 @media (max-width: 768px) {
-  footer.footer--fw { padding: 48px 20px 0 !important; }
-  footer.footer--fw > .footer-fw {
+  footer.footer--fw,
+  footer.site-footer.footer--fw,
+  footer.home-footer.footer--fw { padding: 48px 20px 0 !important; }
+  footer.footer--fw > .footer-fw,
+  footer.site-footer.footer--fw > .footer-fw,
+  footer.home-footer.footer--fw > .footer-fw {
     grid-template-columns: 1fr !important;
     gap: 32px !important;
   }
@@ -987,5 +1001,170 @@ footer.footer--fw .footer-bar a:hover {
   .site-header.is-scrolled nav,
   .site-header.is-scrolled .header-actions {
     margin-top: 0 !important;
+  }
+}
+
+/* Site-wide header and footer colours */
+/* Header text is black on the solid header (home page always, other pages once scrolled);
+   over the dark hero photos it stays white so it remains readable */
+html body .home-page #site-header nav a,
+html body .home-page #site-header .header-phone:not(:hover),
+html body .home-page #site-header .header-phone:not(:hover) :is(span, svg),
+html body #site-header.is-scrolled nav a,
+html body #site-header.is-scrolled .header-phone:not(:hover),
+html body #site-header.is-scrolled .header-phone:not(:hover) :is(span, svg) {
+  color: #000000 !important;
+}
+html body #site-header .header-menu-btn {
+  background: #61347B !important;
+  border-color: #61347B !important;
+  color: #FFFFFF !important;
+}
+html body #site-header .header-menu-btn:hover {
+  background: #D81E29 !important;
+  border-color: #D81E29 !important;
+}
+
+html body .home-page #testimonials .sd-review-card { background: #FFFFFF !important; }
+html body a.is-btn-outline-dark:not(:hover) { color: #61347B !important; }
+
+html body .about-kicker,
+html body .home-hero__kicker,
+html body .home-page p:has(+ h2),
+html body .home-page article > span:has(+ h3),
+html body .about-kicker-light {
+  color: #666666 !important;
+}
+html body .cta-banner .subhead,
+html body .about-band-navy .about-kicker,
+html body .home-page :is(#visit, #catering) p:has(+ h2),
+html body .page-eyebrow,
+html body .page-cta .eyebrow,
+html body .about-band-navy .about-list li {
+  color: #FFFFFF !important;
+}
+
+html body footer.footer--fw,
+html body footer.footer--fw .footer-bar {
+  background: #61347B !important;
+}
+html body footer.footer--fw :is(p, span, div, svg):not(.footer-fw__heading):not(a *),
+html body footer.footer--fw a:not(:hover),
+html body footer.footer--fw a:not(:hover) :is(span, svg) {
+  color: #FFFFFF !important;
+}
+
+html body #site-header :is(nav, .menu-shell) a.is-active,
+html body .mobile-nav-panel__links :is(a.is-active, a[style*="D81E29"]) {
+  border-bottom-color: #61347B !important;
+}
+/* Transparent header over a dark hero (the home header sits on cream, so it keeps purple) */
+html body:not(:has(.home-page)) #site-header:not(.is-scrolled) :is(nav, .menu-shell) a.is-active {
+  border-bottom-color: #FFFFFF !important;
+}
+
+/* Sitemap and policy pages: content starts at the container's left edge, text keeps a readable measure */
+html body main.page-body.narrow {
+  max-width: 1360px !important;
+}
+html body main.page-body.narrow > :not(table) {
+  max-width: 880px;
+}
+html body main.page-body.narrow ul.sitemap-list {
+  padding-left: 0 !important;
+}
+
+/* 1280px content container: shells with 40px side padding get 1280 + 2 × 40 */
+html body #site-header .menu-shell,
+html body section.menu-cats .menu-shell,
+html body .page-shell,
+html body section .page-hero-inner,
+html body section .gallery-hero-content,
+html body section .testimonials-inner,
+html body .contact-section > main.page-body,
+html body main.page-body:has(.gallery-tab),
+html body .home-page .home-hero > div,
+html body .home-page .home-catering__grid,
+html body .home-page section[style*="max-width: 1280px; margin: 0 auto; padding: 84px 40px"],
+html body section > div[style*="max-width: 1280px; width: 100%; margin: 0 auto; padding: 80px 40px 40px"],
+html body .home-page section.home-griddle {
+  max-width: 1360px !important;
+}
+html body .home-page section.home-griddle {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+@media (max-width: 1360px) {
+  html body #site-header .menu-shell,
+  html body section.menu-cats .menu-shell,
+  html body .page-shell,
+  html body section .page-hero-inner,
+  html body section .gallery-hero-content,
+  html body section .testimonials-inner,
+  html body main.page-body,
+  html body section > div[style*="max-width: 1280px; width: 100%; margin: 0 auto; padding: 80px 40px 40px"],
+  html body .home-page .home-hero > div,
+  html body .home-page .home-catering__grid,
+  html body .home-page section.home-griddle,
+  html body .home-page :is(#visit, #testimonials, .cta-banner),
+  html body .home-page section[style*="padding: 84px 40px"],
+  html body section.about-band,
+  html body section.menu-ref:is(#classics, #menu-more, #menu-last, .menu-ref),
+  html body section .page-cta-inner,
+  html body footer.footer--fw {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  html body section.about-band > .about-inner,
+  html body section.page-cta {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  html body #site-header .menu-shell,
+  html body section.menu-cats .menu-shell,
+  html body .page-shell,
+  html body section .page-hero-inner,
+  html body section .gallery-hero-content,
+  html body section .testimonials-inner,
+  html body main.page-body,
+  html body section > div[style*="max-width: 1280px; width: 100%; margin: 0 auto; padding: 80px 40px 40px"],
+  html body .home-page .home-hero > div,
+  html body .home-page .home-catering__grid,
+  html body .home-page section.home-griddle,
+  html body .home-page :is(#visit, #testimonials, .cta-banner),
+  html body .home-page section[style*="padding: 84px 40px"],
+  html body section.about-band,
+  html body section.menu-ref:is(#classics, #menu-more, #menu-last, .menu-ref),
+  html body section .page-cta-inner,
+  html body section[style*="margin-top: 30px; padding: 84px 40px"],
+  html body footer.footer--fw {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  html body section.menu-cats nav {
+    justify-content: space-between !important;
+  }
+  html body section.menu-cats nav a {
+    flex: 1 1 auto !important;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  html body section.menu-cats nav {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px !important;
+    overflow: visible !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  html body section.menu-cats nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

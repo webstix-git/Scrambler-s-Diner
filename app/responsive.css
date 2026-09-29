@@ -51,7 +51,7 @@ img.header-logo,
   display: block;
   width: 22px;
   height: 2px;
-  background: #16325B;
+  background: #61347B;
   border-radius: 1px;
   transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
 }
@@ -60,13 +60,13 @@ img.header-logo,
   background: #FFFFFF;
 }
 .site-header.is-scrolled .nav-toggle__bar {
-  background: #16325B !important;
+  background: #61347B !important;
 }
 /* Home: cream header + navy chrome — hamburger stays dark blue at top */
 .home-page .site-header .nav-toggle__bar,
 .home-page .site-header:not(.is-scrolled) .nav-toggle__bar,
 .home-page .site-header.is-scrolled .nav-toggle__bar {
-  background: #16325B !important;
+  background: #61347B !important;
 }
 
 .site-header.nav-is-open .nav-toggle__bar:nth-child(1) {
@@ -79,14 +79,14 @@ img.header-logo,
   transform: translateY(-7px) rotate(-45deg);
 }
 .site-header.nav-is-open .nav-toggle__bar {
-  background: #16325B !important;
+  background: #61347B !important;
 }
 
 .mobile-nav-panel {
   position: fixed;
   inset: 0;
   z-index: 300;
-  background: rgba(22, 50, 91, 0.45);
+  background: rgba(97,52,123, 0.45);
   padding: 0;
   display: none;
 }
@@ -104,12 +104,12 @@ img.header-logo,
   width: min(360px, 100%);
   height: 100%;
   background: #FBF6EC;
-  color: #16325B;
+  color: #000000;
   padding: 72px 28px 32px;
   box-sizing: border-box;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  box-shadow: -8px 0 28px rgba(22, 50, 91, 0.18);
+  box-shadow: -8px 0 28px rgba(97,52,123, 0.18);
 }
 .mobile-nav-panel__close {
   position: absolute;
@@ -119,7 +119,7 @@ img.header-logo,
   height: 44px;
   border: 0;
   background: transparent;
-  color: #16325B;
+  color: #000000;
   font-size: 32px;
   line-height: 1;
   cursor: pointer;
@@ -130,14 +130,14 @@ img.header-logo,
   gap: 4px;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 22px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .mobile-nav-panel__links a {
   display: block;
   padding: 14px 8px;
-  color: #16325B !important;
-  border-bottom: 1px solid rgba(22, 50, 91, 0.12);
+  color: #000000 !important;
+  border-bottom: 1px solid rgba(97,52,123, 0.12);
   min-height: 44px;
   box-sizing: border-box;
 }
@@ -162,14 +162,14 @@ img.header-logo,
   box-sizing: border-box;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 17px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #16325B !important;
+  color: #000000 !important;
 }
 .mobile-nav-panel__extras .header-menu-btn,
 .mobile-nav-panel__extras a.header-menu-btn {
   background: #FFD21E !important;
-  color: #16325B !important;
+  color: #000000 !important;
   border-radius: 999px;
 }
 .mobile-nav-panel__extras .header-phone {
@@ -690,7 +690,7 @@ body.nav-lock {
   /* Home hamburger: dark blue at top of page (cream header) */
   .home-page .site-header .nav-toggle__bar,
   .home-page .site-header:not(.is-scrolled) .nav-toggle__bar {
-    background: #16325B !important;
+    background: #61347B !important;
   }
 
   /* Testimonials / griddle: no arrows, flush with container */
