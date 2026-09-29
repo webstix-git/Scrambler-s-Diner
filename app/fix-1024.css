@@ -174,21 +174,25 @@
   /* Keep 2-col through lunch, but force columns to fit the container */
   #classics > div[style*="grid"],
   #benedicts > div[style*="grid"],
-  #skillets > div[style*="grid"],
-  #drinks > div[style*="grid"] {
+  #griddle > div[style*="grid"],
+  #sandwiches > div[style*="grid"],
+  #drinks > div[style*="grid"]:first-child {
     grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) !important;
   }
   #omelets > div[style*="grid"],
-  #griddle > div[style*="grid"],
-  #lunch > div[style*="grid"] {
+  #scramwiches > div[style*="grid"],
+  #skillets > div[style*="grid"],
+  #salads > div[style*="grid"] {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr) !important;
   }
   #classics > div[style*="grid"],
   #omelets > div[style*="grid"],
   #benedicts > div[style*="grid"],
+  #scramwiches > div[style*="grid"],
   #griddle > div[style*="grid"],
   #skillets > div[style*="grid"],
-  #lunch > div[style*="grid"],
+  #sandwiches > div[style*="grid"],
+  #salads > div[style*="grid"],
   #drinks > div[style*="grid"],
   .menu-section-grid,
   .menu-section-grid.is-flip {
@@ -202,9 +206,11 @@
   #classics,
   #omelets,
   #benedicts,
+  #scramwiches,
   #griddle,
   #skillets,
-  #lunch {
+  #sandwiches,
+  #salads {
     padding-left: 24px !important;
     padding-right: 24px !important;
     box-sizing: border-box !important;
@@ -214,17 +220,21 @@
   #classics > div,
   #omelets > div,
   #benedicts > div,
+  #scramwiches > div,
   #griddle > div,
   #skillets > div,
-  #lunch > div {
+  #sandwiches > div,
+  #salads > div {
     min-width: 0 !important;
   }
   #classics img,
   #omelets img,
   #benedicts img,
+  #scramwiches img,
   #griddle img,
   #skillets img,
-  #lunch img,
+  #sandwiches img,
+  #salads img,
   .menu-figure img {
     max-width: 100% !important;
     width: 100% !important;

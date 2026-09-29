@@ -213,12 +213,21 @@
   }
   .menu-sides h3,
   .menu-sides-section h3 {
-    margin: 0 0 14px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px !important;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #16325B;
+    margin: 0;
+    background: #16325B;
+    border-bottom: 4px solid #FFD21E;
+    border-radius: 22px 22px 0 0;
+    padding: 18px 28px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(24px, 2.4vw, 30px) !important;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #FBF6EC;
+  }
+  .menu-sides-section h3 + .menu-sides-grid {
+    border-top: none;
+    border-radius: 0 0 22px 22px;
   }
   .menu-sides-grid {
     display: grid;
@@ -263,37 +272,199 @@
     color: #D81E29;
     font-weight: 700;
     border-radius: 0;
+    white-space: nowrap;
   }
-  .menu-notices-grid {
+  .menu-info {
+    background: #FFF7DC;
+    padding: 88px 40px 72px;
+  }
+  .menu-info__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .menu-info__head {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 18px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid rgba(22,50,91,0.18);
+  }
+  .menu-info__eyebrow,
+  .menu-stat__label,
+  .menu-pledge__label,
+  .menu-thanks__label {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #D81E29;
+  }
+  .menu-info__title {
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 500;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #16325B;
+  }
+
+  .menu-info__stats {
     display: grid;
-    grid-template-columns: 1fr 1.15fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .menu-stat {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid rgba(22,50,91,0.1);
+    border-radius: 20px;
+    padding: 26px 26px 24px;
+    box-shadow: 0 10px 26px rgba(22,50,91,0.06);
+    overflow: hidden;
+  }
+  .menu-stat::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 5px;
+    background: #FFD21E;
+  }
+  .menu-stat:nth-child(2)::before { background: #D81E29; }
+  .menu-stat:nth-child(3)::before { background: #16325B; }
+  .menu-stat__label {
+    font-size: clamp(24px, 2.4vw, 30px) !important;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.08em;
+  }
+  .menu-stat__value {
+    margin: 12px 0 10px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(36px, 3.6vw, 48px) !important;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #16325B;
+  }
+  .menu-stat__text {
+    margin: 0;
+    line-height: 1.6;
+    color: rgba(22,50,91,0.78);
+  }
+
+  .menu-info__promise {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
     gap: 22px;
     align-items: stretch;
   }
-  .menu-notice {
-    border-radius: 16px;
-    padding: 22px 24px;
-  }
-  .menu-notice p {
-    margin: 0 !important;
-    font-size: 17px !important;
-    line-height: 1.5 !important;
-    font-weight: 700 !important;
-    color: #16325B !important;
-  }
-  .menu-notice-senior {
+  .menu-pledge {
+    position: relative;
     background: #FFFFFF;
-    border: 3px solid #16325B;
+    border: 1px solid rgba(22,50,91,0.1);
+    border-radius: 20px;
+    padding: 30px 34px 28px 88px;
+    box-shadow: 0 10px 26px rgba(22,50,91,0.06);
   }
-  .menu-notice-raw {
-    background: #16325B;
+  .menu-pledge::before {
+    content: "\201C";
+    position: absolute;
+    top: 14px;
+    left: 26px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 96px;
+    line-height: 1;
+    color: #FFD21E;
+  }
+  .menu-pledge__text {
+    margin: 12px 0 16px;
+    line-height: 1.7;
+    color: rgba(22,50,91,0.88);
+  }
+  .menu-pledge__sign {
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    color: #16325B;
+  }
+  .menu-pledge__sign::before { content: "\2014\00a0"; color: #D81E29; }
+
+  .menu-thanks {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    background: #16325B;
+    border-radius: 20px;
+    padding: 34px 32px;
+    overflow: hidden;
   }
-  .menu-notice-raw p {
-    color: #FBF6EC !important;
-    letter-spacing: 0.03em;
+  .menu-thanks__year {
+    position: absolute;
+    right: -12px;
+    bottom: -34px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: rgba(255,255,255,0.06);
+    pointer-events: none;
+  }
+  .menu-thanks__label { position: relative; color: #FFD21E; }
+  .menu-thanks__text {
+    position: relative;
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(22px, 2.1vw, 28px) !important;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #FBF6EC;
+    text-wrap: balance;
+  }
+  .menu-thanks__sign {
+    position: relative;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
+    color: #FFD21E;
+  }
+  .menu-thanks__sign::before { content: "\2014\00a0"; }
+
+  .menu-advisory {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #FFFFFF;
+    border: 1px solid rgba(22,50,91,0.12);
+    border-left: 4px solid #D81E29;
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+  .menu-advisory__icon {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    margin-top: 1px;
+    color: #D81E29;
+  }
+  .menu-advisory p {
+    margin: 0;
+    font-size: 15px !important;
+    line-height: 1.6;
+    color: rgba(22,50,91,0.85);
+  }
+  .menu-advisory strong {
+    font-weight: 700;
+    color: #16325B;
+  }
+
+  @media (max-width: 960px) {
+    .menu-info__promise { grid-template-columns: 1fr; }
   }
   @media (max-width: 800px) {
     .menu-sides-grid {
@@ -301,14 +472,11 @@
       grid-template-rows: none;
       grid-auto-flow: row;
     }
-    .menu-notices-grid { grid-template-columns: 1fr; }
-  }
-  .menu-salad-label {
-    font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 32px !important;
-    letter-spacing: 0.12em !important;
-    text-transform: uppercase !important;
-    color: #16325B !important;
+    .menu-info { padding: 56px 16px 40px; }
+    .menu-info__stats { grid-template-columns: 1fr; gap: 16px; }
+    .menu-pledge { padding: 64px 22px 24px; }
+    .menu-pledge::before { top: 8px; left: 20px; font-size: 80px; }
+    .menu-thanks { padding: 28px 22px; }
   }
   .menu-photo-cards {
     display: flex;
@@ -359,27 +527,58 @@
   #classics,
   #omelets,
   #benedicts,
+  #scramwiches,
   #griddle,
   #skillets,
-  #lunch,
+  #sandwiches,
+  #salads,
   #drinks {
     scroll-margin-top: 180px;
+    padding-top: 88px !important;
+    padding-bottom: 88px !important;
+  }
+  #classics { padding-top: 48px !important; }
+  .menu-sides-section {
+    background: #FFF7DC;
+    padding-top: 0 !important;
+    padding-bottom: 88px !important;
+  }
+  @media (max-width: 900px) {
+    #classics,
+    #omelets,
+    #benedicts,
+    #scramwiches,
+    #griddle,
+    #skillets,
+    #sandwiches,
+    #salads,
+    #drinks {
+      padding-top: 56px !important;
+      padding-bottom: 56px !important;
+    }
+    .menu-sides-section {
+      padding: 0 16px 56px !important;
+    }
   }
   #classics h2,
   #omelets h2,
   #benedicts h2,
+  #scramwiches h2,
   #griddle h2,
   #skillets h2,
-  #lunch h2,
+  #sandwiches h2,
+  #salads h2,
   #drinks h2 {
     font-weight: 500 !important;
   }
   #classics figure,
   #omelets figure,
   #benedicts figure,
+  #scramwiches figure,
   #griddle figure,
   #skillets figure,
-  #lunch figure,
+  #sandwiches figure,
+  #salads figure,
   #drinks figure {
     top: 168px !important;
   }
@@ -481,9 +680,11 @@
     #classics,
     #omelets,
     #benedicts,
+    #scramwiches,
     #griddle,
     #skillets,
-    #lunch,
+    #sandwiches,
+    #salads,
     #drinks {
       padding-left: 16px !important;
       padding-right: 16px !important;
@@ -491,9 +692,11 @@
     #classics > div,
     #omelets > div,
     #benedicts > div,
+    #scramwiches > div,
     #griddle > div,
     #skillets > div,
-    #lunch > div,
+    #sandwiches > div,
+    #salads > div,
     #drinks > div,
     #drinks > div:first-child,
     #drinks > div:nth-child(2) {
@@ -502,9 +705,11 @@
     #classics figure,
     #omelets figure,
     #benedicts figure,
+    #scramwiches figure,
     #griddle figure,
     #skillets figure,
-    #lunch figure,
+    #sandwiches figure,
+    #salads figure,
     #drinks figure,
     .menu-photo-cards {
       position: static !important;
