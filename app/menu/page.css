@@ -1106,6 +1106,10 @@
     .menu-ref { padding: 40px 16px 56px !important; }
     .menu-ref__grid { grid-template-columns: 1fr !important; gap: 28px; }
     .menu-ref--compact .menu-ref__grid--three { grid-template-areas: none; }
+    /* Keep the desktop columns intact, but place Sides after the griddle column on mobile. */
+    #menu-more .menu-ref__col--center,
+    #menu-more .menu-ref__col--right { display: contents; }
+    #menu-more .menu-ref-sides { order: 1; margin-top: 0; }
     .menu-ref__footer { grid-template-columns: 1fr; gap: 20px; }
     .menu-ref__col--left,
     .menu-ref__col--center,
