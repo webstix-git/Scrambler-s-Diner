@@ -350,7 +350,7 @@ img.header-logo { height: var(--header-logo-h); max-height: var(--header-logo-h)
   .about-split { grid-template-columns: 1fr; gap: 28px; }
   .about-card-grid { grid-template-columns: 1fr; }
   .about-photo { aspect-ratio: 16 / 10; }
-  .about-lede { max-width: none; }
+  .about-lede, .about-julie-quote { max-width: none; }
 }
 
 .gallery-grid {
@@ -1417,6 +1417,27 @@ footer .footer-hours span,
 
 .about-mosaic-gallery {
   margin-top: 8px;
+}
+.about-julie-quote {
+  margin: 28px 0 0;
+  max-width: 38ch;
+  padding: 2px 0 2px 18px;
+  border-left: 6px solid #61347B;
+}
+.about-julie-quote p {
+  margin: 0;
+  font-family: var(--font-libre-franklin), 'Libre Franklin', system-ui, sans-serif;
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.55;
+  color: #000000;
+}
+.about-julie-quote footer {
+  margin-top: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D81E29;
 }
 .about-mosaic-family {
   grid-template-columns: repeat(3, minmax(0, 1fr));
